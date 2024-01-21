@@ -21,7 +21,7 @@ This article covers a topic in discrete mathematics that often goes unnoticed in
 
 ## What is a Cartesian Product?
 
-The cartesian product of two sets, \(A\) and \(B\), is denoted \(A \times B\), and is defined as such: $$A \times B = \\{(a,b) \ | \ a \in A, \ b\in B\\}$$ In plain English, it is the set of all possible ordered pairs whose first component comes from \(A\), and whose second component comes from \(B\)[^1].
+The cartesian product of two sets, \\(A\\) and \\(B\\), is denoted \\(A \times B\\), and is defined as such: $$A \times B = \\{(a,b) \ | \ a \in A, \ b\in B\\}$$ In plain English, it is the set of all possible ordered pairs whose first component comes from \\(A\\), and whose second component comes from \\(B\\)[^1].
 
 ###  Example
 
@@ -103,17 +103,17 @@ Which results in:
 
 ### Cartesian Plane
 
-What if our sets are larger than just three elements, say an infinite amount? In this scenario, we can use the set of all real numbers, \(\mathbb{R}\), and have \(\mathbb{R} \times \mathbb{R}\), (often denoted as \(\mathbb{R}^2\)). That is, the cartesian product of the real number line with itself ***is*** the **cartesian plane**[^4].
+What if our sets are larger than just three elements, say an infinite amount? In this scenario, we can use the set of all real numbers, \\(\mathbb{R}\\), and have \\(\mathbb{R} \times \mathbb{R}\), (often denoted as \\(\mathbb{R}^2\)). That is, the cartesian product of the real number line with itself ***is*** the **cartesian plane**[^4].
 
 $$\mathbb{R} \times \mathbb{R} = \\{(x,y) \ | \ x,y \in \mathbb{R}\\}$$
 
 You will find that any two numbers plugged into this general formula corresponds to an ordered pair of real numbers.
 
-### \(3\)-Dimensional Plotting
+### \\(3\\)-Dimensional Plotting
 
-We can also use the cartesian product to generate what is referred to as a **meshgrid** in 3-Dimensional plotting. In fact, Numpy's [`meshgrid()`](https://numpy.org/doc/stable/reference/generated/numpy.meshgrid.html#:~:text=returns%20a%20meshgrid%20with%20Cartesian%20indexing) function unsurprisingly uses the cartesian product for its calculations. This involves creating a sort of blanket of points on a graph with 3 axes: \((x,y,z)\). 
+We can also use the cartesian product to generate what is referred to as a **meshgrid** in 3-Dimensional plotting. In fact, Numpy's [`meshgrid()`](https://numpy.org/doc/stable/reference/generated/numpy.meshgrid.html#:~:text=returns%20a%20meshgrid%20with%20Cartesian%20indexing) function unsurprisingly uses the cartesian product for its calculations. This involves creating a sort of blanket of points on a graph with 3 axes: \\((x,y,z)\\). 
 
-In this scenario, we are dealing with \(\mathbb{R} \times \mathbb{R} \times \mathbb{R} = \mathbb{R}^3\), as there are three number lines expanding indefinitely.
+In this scenario, we are dealing with \\(\mathbb{R} \times \mathbb{R} \times \mathbb{R} = \mathbb{R}^3\\), as there are three number lines expanding indefinitely.
 
 For this example, we will create a cube of planes. We first must start out by defining our sets. We will go for a 10x10x10 cube:
 
@@ -167,7 +167,7 @@ fig.show()
 
 {{<plotly json="https://rawcdn.githack.com/s-lasch/personal-site/3de3730839393851300294bd5d2c3447d8a0e468/images/scatter_cube.json" height="500px">}}
 
-If we want to create a plane, we just need to keep one of the axes constant, say \(z\):
+If we want to create a plane, we just need to keep one of the axes constant, say \\(z\\):
 
 ```python
 import plotly.graph_objs as go
