@@ -146,7 +146,8 @@ params:
     enable: true
     title: "About Me"
     image: "/images/me.png"
-    content: 
+    content: |-
+      I am a data scientist with a passion for creating data-driven products. I have a background in data science and mathematics, and I have a strong interest in AI and its intersection in natural language processing. I am currently working as a data scientist at Mercyhurst University [CIRAT.](https://www.mercyhurst.edu/academics/cirat) in Erie, PA.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
