@@ -169,7 +169,7 @@ params:
         companyUrl: "https://www.mercyhurst.edu/academics/beehive"
         date: "June 2023 - present"
         # featuredLink:
-        #   enable: true
+        #   enable: false
         #   name: "View the project"
         #   url: "https://example.com"
         content: "I am currently working as a data analyst at Mercyhurst University's [IEL](https://www.mercyhurst.edu/academics/beehive) in Erie, PA. I work projects that use data-driven insights to aid small businesses in the greater Erie area."
@@ -179,7 +179,7 @@ params:
         companyUrl: "https://www.mercyhurst.edu/academics/cirat"
         date: "Apr 2022 - present"
         # featuredLink:
-        #   enable: true
+        #   enable: false
         #   url: "https://example.com"
         info:
           enable: true
@@ -203,9 +203,9 @@ params:
         info:
           enable: true
           content: Contracted data scientist for 1+ year.
-        featuredLink:
-          # enable: true
-          # url: "https://example.com"
+        # featuredLink:
+        #   # enable: false
+        #   # url: "https://example.com"
         content: |
           I have worked as a contracted data scientist for Empower AI. For this project, we were tasked with creating a programming language translator from legacy languages such as Cobol, PowerBuilder, and Fortran into modern ones such as Java, C, and Python.
 
