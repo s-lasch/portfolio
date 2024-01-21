@@ -263,7 +263,7 @@ params:
     title: "Publications"
     items:
       - title: American Sign Language Translation Using Transfer Learning
-        content: Published in [2023 IEEE International Conference on Artificial Intelligence, Blockchain, and Internet of Things](https://ieeexplore.ieee.org/xpl/conhome/10292429/proceeding)
+        content: Published in 2023 IEEE International Conference on Artificial Intelligence, Blockchain, and Internet of Things.
         url: https://ieeexplore.ieee.org/document/10291026
         image: /images/achievment.jpg
 
