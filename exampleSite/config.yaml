@@ -121,7 +121,7 @@ params:
     title: "Steven Lasch."
     subtitle: "A data-driven professional."
     content: "Dedicated to creating data-driven products. Proficient in data visualization, data cleaning, database management, and machine learning. "
-    image: /images/IMG_1818.jpg
+    image: /images/me.png
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -147,7 +147,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/IMG_1818.jpg"
     content: |-
       I am a data scientist with a passion for creating data-driven products. I have a background in data science and mathematics, and I have a strong interest in AI and its intersection in natural language processing. I am currently working as a data scientist at Mercyhurst University [CIRAT.](https://www.mercyhurst.edu/academics/cirat) in Erie, PA.
     skills:
