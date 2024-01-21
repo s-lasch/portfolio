@@ -209,7 +209,7 @@ params:
 
           - Aided in the scraping of open-source code repositories.
           - Cleaned scraped repositories for standardization for ease of use in machine learning training.
-          - Achieved model accuracy of ~92%.
+          - Achieved model accuracy of 92%.
 
   # Education
   education:
