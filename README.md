@@ -1,6 +1,6 @@
 # TODO
-- [x] ~update config.yaml~
-- [ ] Fix favicon
+- [x] ~Update config.yaml~
+- [x] ~Fix favicon~
 - [ ] Transfer additional blog posts
 - [ ] Add professional headshot to main page
 - [ ] Change home page wording at the top, i.e. the "Hi, my name is..." section
