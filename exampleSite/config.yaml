@@ -226,8 +226,8 @@ params:
         GPA: "4.0 (cumulative)"
         content: |-
           Extracurricular Activities
-            - "Dean's list scholar for 7 consecutive semesters."
-            - "Published paper titled [American Sign Language Translation Using Transfer Learning](https://ieeexplore.ieee.org/document/10291026) as senior project."
+            - Dean's list scholar for 7 consecutive semesters.
+            - Published paper titled [American Sign Language Translation Using Transfer Learning](https://ieeexplore.ieee.org/document/10291026) as senior project.
             - Used open-sourced pretrained transformers from [HuggingFace](https://huggingface.co/) to translate ASL Gloss to English with high accuracy, and proposed a new state of the art data set. 
       # - title: "Bachelor of Science in Computer Science"
       #   school:
