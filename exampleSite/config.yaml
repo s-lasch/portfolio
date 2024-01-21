@@ -124,7 +124,7 @@ params:
     image: /images/me.png
     bottomImage:
       enable: true
-      roundImage: true
+      roundImage: false
     button:
       enable: true
       name: "Resume"
