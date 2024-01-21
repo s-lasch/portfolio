@@ -7,7 +7,7 @@ tags:
   - applied math
   - data viz
   - plotly
-image: /images/math.gif
+image: /images/knn.gif
 description: "Distance metrics are a crucial component of a k-nearest neighbors algorithm. They determine the distance between data points of different classes. Generally speaking, data points closer together are of the same class."
 toc: true
 mathjax: true
