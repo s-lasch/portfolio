@@ -121,7 +121,7 @@ params:
     title: "Steven Lasch."
     subtitle: "A data-driven professional."
     content: "Dedicated to creating data-driven products. Proficient in data visualization, data cleaning, database management, and machine learning. "
-    image: /images/hero.svg
+    image: /images/IMG_1818.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
