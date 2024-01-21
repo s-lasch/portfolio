@@ -194,7 +194,8 @@ params:
         company: "Mercyhurst University"
         companyUrl: "https://mercyhurst.edu"
         date: "Sep 2021 - present"
-        content: "I am currently working as a computer science tutor. I love tutoring students in Python programming concepts such as data analysis, data visualization, data structures and algorithms. I tutor between 5 and 10 students on a weekly basis in these concepts."
+        content: |
+          I am currently working as a computer science tutor. I love tutoring students in Python programming concepts such as data analysis, data visualization, data structures and algorithms. I tutor between 5 and 10 students on a weekly basis in these concepts.
 
       - job: "Data Scientist"
         company: "Empower AI, Inc."
@@ -203,7 +204,7 @@ params:
         info:
           enable: true
           content: Contracted data scientist for 1+ year.
-        content: |-
+        content: |
           I have worked as a contracted data scientist for Empower AI. For this project, we were tasked with creating a programming language translator from legacy languages such as Cobol, PowerBuilder, and Fortran into modern ones such as Java, C, and Python.
 
           - Aided in the scraping of open-source code repositories.
