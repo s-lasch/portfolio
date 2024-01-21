@@ -190,13 +190,6 @@ params:
           - Participated in the creation of a demo chatbot to answer faculty FAQ.
           - Assisted in creating a quality assurance mechanism for easy chatbot updating.
 
-      - job: "Computer Science Tutor"
-        company: "Mercyhurst University"
-        companyUrl: "https://mercyhurst.edu"
-        date: "Sep 2021 - present"
-        content: |
-          I am currently working as a computer science tutor. I love tutoring students in Python programming concepts such as data analysis, data visualization, data structures and algorithms. I tutor between 5 and 10 students on a weekly basis in these concepts.
-
       - job: "Data Scientist"
         company: "Empower AI, Inc."
         companyUrl: "https://www.empower.ai/"
@@ -210,6 +203,15 @@ params:
           - Aided in the scraping of open-source code repositories.
           - Cleaned scraped repositories for standardization for ease of use in machine learning training.
           - Achieved model accuracy of 92%.
+
+      # - job: "Computer Science Tutor"
+      #   company: "Mercyhurst University"
+      #   companyUrl: "https://mercyhurst.edu"
+      #   date: "Sep 2021 - present"
+      #   content: |
+      #     I am currently working as a computer science tutor. I love tutoring students in Python programming concepts such as data analysis, data visualization, data structures and algorithms. I tutor between 5 and 10 students on a weekly basis in these concepts.
+
+
 
   # Education
   education:
