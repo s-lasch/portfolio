@@ -183,10 +183,10 @@ params:
         # featuredLink:
         #   enable: false
         #   url: "https://example.com"
-        info:
-          enable: true
-          content: Project management experience since Jan 2024.
-        content: |-
+        # info:
+        #   enable: true
+        #   content: Project management experience since Jan 2024.
+        content: |
           I have participated in several projects and internships through the [CIRAT](https://www.mercyhurst.edu/academics/cirat), and most recently I have taken a team lead position for our AI and Academics project, where we are aiding university administration by leveraging AI.
 
           - Participated in the creation of a demo chatbot to answer faculty FAQ.
