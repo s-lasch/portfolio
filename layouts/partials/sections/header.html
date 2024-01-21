@@ -1,3 +1,7 @@
+{{ if .Params.plotly }}
+	    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+{{ end }}
+
 {{- /* theme is auto */}}
 <script>
     let localStorageValue = localStorage.getItem("pref-theme");
