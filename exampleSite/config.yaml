@@ -160,7 +160,7 @@ params:
 
   # Experience
   experience:
-    enable: true
+    - enable: true
     # title: "Custom Name"
     items:
       - job: "Senior Data Analyst"
