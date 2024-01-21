@@ -10,3 +10,4 @@
 - [ ] Test contact form, ensure that formspree is working
 - [ ] Reassign domain..?
 - [ ] Edit CSS for all `<img>` tags to be center aligned
+- [ ] Edit CSS for all `<a>` tags to have the same hover animation as do the company names in the "Experiences" section
