@@ -9,7 +9,7 @@ tags:
   - applied math
   - data viz
   - plotly
-image: /images/math.gif
+image: /images/neural_net.gif
 description: "In this article, we will walk through an example of a binary classification problem that is more complex. For this approach, we will be implementing a simple feed-forward neural network to determine the classes."
 toc: true
 mathjax: true
