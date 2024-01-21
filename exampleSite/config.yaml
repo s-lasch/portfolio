@@ -117,10 +117,10 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
+    intro: "Hello! I'm"
     title: "Steven Lasch."
     subtitle: "A data-driven professional."
-    content: "Dedicated to creating data-driven products. Proficient in data visualization, data cleaning, database management, and machine learning. "
+    content: "Dedicated to creating data-driven products. Proficient in data visualization and engineering, databases, and machine learning. "
     image: /images/me.png
     bottomImage:
       enable: true
