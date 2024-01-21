@@ -8,7 +8,7 @@ tags:
   - applied math
   - data viz
   - plotly
-image: /images/mathjax.png
+image: /images/math.gif
 description: "This article covers a topic in discrete mathematics that often goes unnoticed in data science and data visualization: the Cartesian product."
 toc: true
 mathjax: true
