@@ -157,11 +157,11 @@ params:
         - "Hugo"
         - "OpenAI API"
         - "Google Colab"
-        - "Jupyter Notebooks
+        - "Jupyter Notebooks"
 
   # Experience
   experience:
-    - enable: true
+    enable: true
     # title: "Custom Name"
     items:
       - job: "Senior Data Analyst"
