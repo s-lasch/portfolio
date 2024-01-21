@@ -9,3 +9,4 @@
 - [ ] Change publication image
 - [ ] Test contact form, ensure that formspree is working
 - [ ] Reassign domain..?
+- [ ] Edit CSS for all `<img>` tags to be center aligned
