@@ -196,7 +196,7 @@ params:
         date: "Apr 2022 - Apr 2023"
         info:
           enable: true
-          content: Contracted data scientist for 1+ year.
+          content: "Contracted data scientist for 1+ year."
         content: |
           I have worked as a contracted data scientist for Empower AI. For this project, we were tasked with creating a programming language translator from legacy languages such as Cobol, PowerBuilder, and Fortran into modern ones such as Java, C, and Python.
 
