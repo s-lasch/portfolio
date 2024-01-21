@@ -3,7 +3,7 @@
 - [x] ~Fix favicon~
 - [ ] Transfer additional blog posts
 - [x] Add professional headshot to main page
-- [ ] Change home page wording at the top, i.e. the "Hi, my name is..." section
+- [x] ~Change home page wording at the top, i.e. the "Hi, my name is..." section~
 - [ ] Change project images
 - [ ] Change blog post images
 - [ ] Change publication image
