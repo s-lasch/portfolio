@@ -306,7 +306,7 @@ params:
 
       - title: Typing Data Analysis
         content: This project helped me to appply my knowledge of data collection via dynamic web scraping. I used it to export my typing data as a CSV file, where I then uploaded it to my GitHub repository. After this, I developed a dashboard application that I coded in Python.
-        image: /images/projects/monkeytype_visualizations.png
+        image: /images/projects/monkeytype_visualization.png
         featured:
           name: Demo
           link: https://typing-test-gz3r.onrender.com/
