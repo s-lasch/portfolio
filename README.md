@@ -4,7 +4,7 @@
 - [x] ~Transfer additional blog posts~
 - [x] ~Add professional headshot to main page~
 - [x] ~Change home page wording at the top, i.e. the "Hi, my name is..." section~
-- [ ] Change project images
+- [x] ~Change project images~
 - [x] ~Change blog post images~
 - [ ] Change publication image
 - [ ] Test contact form, ensure that formspree is working
