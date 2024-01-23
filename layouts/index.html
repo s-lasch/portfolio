@@ -1,3 +1,4 @@
+<!-- head -->
 {{ define "head" }}
 <meta name="description" content={{ .Site.Params.description }}>
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/index.css" media="all">
@@ -5,6 +6,8 @@
 
 <!-- fontawesome -->
 <script defer src="{{ .Site.Params.staticPath }}/fontawesome-5/all-5.15.4.js"></script>
+
+<!-- configure mathjax for home page -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: {
@@ -19,10 +22,12 @@
 </script>
 {{ end }}
 
+<!-- title -->
 {{ define "title" }}
 {{ .Site.Title }}
 {{ end }}
 
+<!-- body -->
 {{ define "main" }}
 {{- partial "sections/hero/index.html" . -}}
 {{- partial "sections/about.html" . -}}
