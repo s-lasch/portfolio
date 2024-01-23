@@ -49,7 +49,7 @@ When classifying a point, a shorter distance between that point and another poin
 You can see the difference in Euclidean distance and Manhattan distance more clearly in the image below. The formula on the right resembles the distance from one street to another in a city grid, hence the name “Manhattan” distance.
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/euclid_manhat_distance.svg" 
+      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/35b26df6a03b462736347811353eefa9edf314d5/exampleSite/content/blogs/knn-distance/euclid_manhat_distance.svg" 
            alt=""/>
 </p>
 
@@ -88,10 +88,10 @@ In a linear algebra textbook, you might see a similar equation that looks like t
       <img src="https://raw.githubusercontent.com/s-lasch/portfolio/508cb4ede63bfe74b09733c95f8bbf59b6e9d576/exampleSite/content/blogs/knn-distance/lin_alg_cosine_sim.svg" width="60%"/>
 </p>
 
-This is the same formula, where \\(\vec{x}\\) and \\(\vec{y}\\)  represent two feature vectors, and \\(\|\|\vec{x}\|\|\\) and \\(\|\|\vec{y}\|\|\\) are the lengths of each vector. This formula measures the similarity of two vectors. Orthogonal vectors, i.e., vectors where \\(\cos{(\theta)} \approxeq 0\\), have *no similarity*, while vectors where \\(\cos{(\theta)} \approxeq 1\\) have the *most similarity*. This can be seen graphically, as below:
+This is the same formula, where \\(\vec{x}\\) and \\(\vec{y}\\)  represent two feature vectors, and \\(\|\|\vec{x}\|\|\\) and \\(\|\|\vec{y}\|\|\\) are the lengths of each vector. This formula measures the similarity of two vectors, and an output range of \\([-1, \ 1]\\). Orthogonal vectors, i.e., vectors where \\(\cos{(\theta)} \approxeq -1\\), have *exact dissimilarity*, \\(\cos{(\theta)} \approxeq 0\\), have *no correlation*, and \\(\cos{(\theta)} \approxeq 1\\) have the *exact similarity*. This can be seen graphically, as below:
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/cos_similarity_graph.svg" 
+      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/35b26df6a03b462736347811353eefa9edf314d5/exampleSite/content/blogs/knn-distance/cos_similarity_graph.svg" 
            alt=""/>
 </p>
 
@@ -104,7 +104,7 @@ In the middle graph, since the two vectors are multiples of each other, and they
 This is apparent because we have \\(2\vec{x} = \vec{y}\\) in the middle graph. Finally, in the third graph, these two vectors are as dissimilar as they can get, with a similarity of \\(-1\\). Like in the middle graph, these vectors are indeed multiples of each other since we have \\(-1\vec{x} = \vec{y}\\). The key difference is that the negative magnitude changes the direction of \\(\vec{y}\\). 
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/fe336c61d5a0494dea1048e458d4d1c2b9c2eb3c/images/all_cos_sims.svg" 
+      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/35b26df6a03b462736347811353eefa9edf314d5/exampleSite/content/blogs/knn-distance/all_cos_sims.svg" 
            alt=""/>
 </p>
 
@@ -113,8 +113,8 @@ This is apparent because we have \\(2\vec{x} = \vec{y}\\) in the middle graph. F
 ### **Hamming Distance** 
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/hamming_distance.svg" 
-           width="40%"/>
+      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/35b26df6a03b462736347811353eefa9edf314d5/exampleSite/content/blogs/knn-distance/hamming_distance.svg" 
+           width="60%"/>
 </p>
 
-If we wanted to classify a binary output, this is the metric we want to use. The function \\(\delta\\) is the Kronecker delta function, which returns \\(1\\), or True if \\(x_i = y_i\\), and \\(0\\), or False if \\(x_i \neq y_i\\). It measures the number of positions at which two vectors differ. It is commonly used in various fields, including biology, for comparing sequences such as DNA molecules to identify the positions where they differ.
+If we wanted to classify a binary output, this is the metric we want to use. The function \\(\delta\\) is the [Kronecker delta function](https://www.wikiwand.com/en/Kronecker_delta#:~:text=In%20mathematics%2C%20the%20Kronecker%20delta%20(named%20after%20Leopold%20Kronecker)%20is%20a%20function%20of%20two%20variables%2C%20usually%20just%20non%2Dnegative%20integers.%20The%20function%20is%201%20if%20the%20variables%20are%20equal%2C%20and%200%20otherwise%3A), which returns \\(1\\), or True if \\(x_i = y_i\\), and \\(0\\), or False if \\(x_i \neq y_i\\). It measures the number of positions at which two vectors differ. It is commonly used in various fields, including biology, for comparing sequences such as DNA molecules to identify the positions where they differ.
