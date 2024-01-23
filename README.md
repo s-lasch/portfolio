@@ -6,7 +6,7 @@
 - [x] ~Change home page wording at the top, i.e. the "Hi, my name is..." section~
 - [x] ~Change project images~
 - [x] ~Change blog post images~
-- [ ] Change publication image
+- [x] ~Change publication image~
 - [ ] Test contact form, ensure that formspree is working
 - [ ] Reassign domain..?
 - [ ] Edit CSS for all `<img>` tags to be center aligned
