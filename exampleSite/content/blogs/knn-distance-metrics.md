@@ -77,7 +77,7 @@ In general, a higher value of \\(p\\) can give more importance to larger differe
 ### **Cosine Similarity**
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/cosine_similarity.svg" 
+      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/8a0c2efb79e280e357967627c45afbfdcbf50e4e/exampleSite/content/blogs/knn-distance/cosine_similarity.svg" 
            width="40%"/>
 </p>
 
