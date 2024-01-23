@@ -88,7 +88,7 @@ In a linear algebra textbook, you might see a similar equation that looks like t
       <img src="https://raw.githubusercontent.com/s-lasch/portfolio/508cb4ede63bfe74b09733c95f8bbf59b6e9d576/exampleSite/content/blogs/knn-distance/lin_alg_cosine_sim.svg" width="60%"/>
 </p>
 
-This is the same formula, where \\(\vec{x}\\) and \\(\vec{y}\\)  represent two feature vectors, and \\(\|\|\vec{x}\|\|\\) and \\(\|\|\vec{y}\|\|\\) are the lengths of each vector. This formula measures the similarity of two vectors, and an output range of \\([-1, \ 1]\\). Orthogonal vectors, i.e., vectors where \\(\cos{(\theta)} \approxeq -1\\), have *exact dissimilarity*, \\(\cos{(\theta)} \approxeq 0\\), have *no correlation*, and \\(\cos{(\theta)} \approxeq 1\\) have the *exact similarity*. This can be seen graphically, as below:
+This is the same formula, where \\(\vec{x}\\) and \\(\vec{y}\\)  represent two feature vectors, and \\(\|\|\vec{x}\|\|\\) and \\(\|\|\vec{y}\|\|\\) are the lengths of each vector. This formula measures the similarity of two vectors, and an output range of \\([-1, \ 1]\\). Vectors where \\(\cos{(\theta)} \approxeq -1\\), have *exact dissimilarity*, \\(\cos{(\theta)} \approxeq 0\\) (orthogonal vectors), have *no correlation*, and \\(\cos{(\theta)} \approxeq 1\\) have the *exact similarity*. This can be seen graphically, as below:
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/portfolio/35b26df6a03b462736347811353eefa9edf314d5/exampleSite/content/blogs/knn-distance/cos_similarity_graph.svg" 
