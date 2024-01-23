@@ -68,7 +68,7 @@ When calculating the similarity or distance between two houses, using the Euclid
 
 This distance formula is unique in that it includes both Euclidean and Manhattan distances as special cases, when \\(p=2\\) and \\(p=1\\), respectively. Using this distance formula allows us to control a single variable, \\(p\\), to get either formula. 
 
-Note that [`sklearn.neighbors.KNeighborsClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html) function uses Minkowski distance as the default metric, most likely because of its versatility. Refer to [`scipy.spatial.distance`](https://docs.scipy.org/doc/scipy/reference/spatial.distance.html) for a complete list of distance metrics.
+Note that [`sklearn.neighbors.KNeighborsClassifier()`](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#:~:text=%3D2%2C-,metric%3D%27minkowski%27,-%2C%20metric_params%3D) function uses Minkowski distance as the default metric, most likely because of its versatility. Refer to [`scipy.spatial.distance()`](https://docs.scipy.org/doc/scipy/reference/spatial.distance.html) for a complete list of distance metrics.
 
 In general, a higher value of \\(p\\) can give more importance to larger differences between feature values, while a lower value of \\(p\\) can prioritize individual feature differences.
 
