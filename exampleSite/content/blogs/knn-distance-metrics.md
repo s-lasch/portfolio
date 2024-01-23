@@ -77,7 +77,7 @@ In general, a higher value of \\(p\\) can give more importance to larger differe
 ### **Cosine Similarity**
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/8a0c2efb79e280e357967627c45afbfdcbf50e4e/exampleSite/content/blogs/knn-distance/cosine_similarity.svg" />
+      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/8a0c2efb79e280e357967627c45afbfdcbf50e4e/exampleSite/content/blogs/knn-distance/cosine_similarity.svg" width="50%/>
 </p>
 
 If you’ve taken a linear algebra class, you’ve definitely seen this formula before. This equation calculates \\(\cos{(\theta)}\\) , where \\(\theta\\) represents the angle between two non-zero feature vectors. It involves taking the dot product of two vectors in the numerator, then dividing it by the length of each vector.
@@ -85,7 +85,7 @@ If you’ve taken a linear algebra class, you’ve definitely seen this formula 
 In a linear algebra textbook, you might see a similar equation that looks like this:
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/508cb4ede63bfe74b09733c95f8bbf59b6e9d576/exampleSite/content/blogs/knn-distance/lin_alg_cosine_sim.svg" width="60%"/>
+      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/508cb4ede63bfe74b09733c95f8bbf59b6e9d576/exampleSite/content/blogs/knn-distance/lin_alg_cosine_sim.svg" />
 </p>
 
 This is the same formula, where \\(\vec{x}\\) and \\(\vec{y}\\)  represent two feature vectors, and \\(\|\|\vec{x}\|\|\\) and \\(\|\|\vec{y}\|\|\\) are the lengths of each vector. This formula measures the similarity of two vectors, and an output range of \\([-1, \ 1]\\). Vectors where \\(\cos{(\theta)} \approxeq -1\\), have *exact dissimilarity*, \\(\cos{(\theta)} \approxeq 0\\) (orthogonal vectors), have *no correlation*, and \\(\cos{(\theta)} \approxeq 1\\) have the *exact similarity*. This can be seen graphically, as below:
