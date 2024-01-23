@@ -105,7 +105,7 @@ This is apparent because we have \\(2\vec{x} = \vec{y}\\) in the middle graph. F
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/portfolio/35b26df6a03b462736347811353eefa9edf314d5/exampleSite/content/blogs/knn-distance/all_cos_sims.svg" 
-           alt=""/>
+           alt="" width="100%"/>
 </p>
 
 <br>
