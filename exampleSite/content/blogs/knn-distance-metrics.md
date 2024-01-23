@@ -38,8 +38,8 @@ Euclidean distance is a straightforward measure of spatial similarity, making it
 ### **Manhattan Distance**
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/manhattan_distance.svg" 
-           width="40%"/>
+      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/ff3a80b82866d2110c137d68d335cc8df6142c8b/exampleSite/content/blogs/knn-distance/manhattan_distance.svg" 
+           width="50%"/>
 </p>
 
 This distance formula is different from Euclidean distance because it does not measure the magnitude nor the angle of the line connecting two points. In certain instances, knowing the magnitude of the line between two points is necessary in a \\(k\\)-NN problem. 
