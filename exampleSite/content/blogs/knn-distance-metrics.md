@@ -85,7 +85,7 @@ If you’ve taken a linear algebra class, you’ve definitely seen this formula 
 In a linear algebra textbook, you might see a similar equation that looks like this:
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/508cb4ede63bfe74b09733c95f8bbf59b6e9d576/exampleSite/content/blogs/knn-distance/lin_alg_cosine_sim.svg" />
+      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/508cb4ede63bfe74b09733c95f8bbf59b6e9d576/exampleSite/content/blogs/knn-distance/lin_alg_cosine_sim.svg" width="30%"/>
 </p>
 
 This is the same formula, where \\(\vec{x}\\) and \\(\vec{y}\\)  represent two feature vectors, and \\(\|\|\vec{x}\|\|\\) and \\(\|\|\vec{y}\|\|\\) are the lengths of each vector. This formula measures the similarity of two vectors, and an output range of \\([-1, \ 1]\\). Vectors where \\(\cos{(\theta)} \approxeq -1\\), have *exact dissimilarity*, \\(\cos{(\theta)} \approxeq 0\\) (orthogonal vectors), have *no correlation*, and \\(\cos{(\theta)} \approxeq 1\\) have the *exact similarity*. This can be seen graphically, as below:
