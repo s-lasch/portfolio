@@ -26,7 +26,7 @@ The first—and most common—distance formula is the **Euclidean distance**.
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/portfolio/3bf29a5d9bb4f88a9ab2e78445a0e44d45f36189/exampleSite/content/blogs/knn-distance/euclidean_distance.svg" 
-           width="70%"/>
+           width="60%"/>
 </p>
 
 This is calculated by finding the difference between elements in list \\(x\\) with elements in list \\(y\\), calculating the sum of those differences, and taking the square root of the sum. This finds the **linear distance** between two points. 
@@ -39,7 +39,7 @@ Euclidean distance is a straightforward measure of spatial similarity, making it
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/portfolio/ff3a80b82866d2110c137d68d335cc8df6142c8b/exampleSite/content/blogs/knn-distance/manhattan_distance.svg" 
-           width="70%"/>
+           width="60%"/>
 </p>
 
 This distance formula is different from Euclidean distance because it does not measure the magnitude nor the angle of the line connecting two points. In certain instances, knowing the magnitude of the line between two points is necessary in a \\(k\\)-NN problem. 
