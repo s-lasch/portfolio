@@ -39,7 +39,7 @@ Euclidean distance is a straightforward measure of spatial similarity, making it
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/portfolio/ff3a80b82866d2110c137d68d335cc8df6142c8b/exampleSite/content/blogs/knn-distance/manhattan_distance.svg" 
-           width="50%"/>
+           width="70%"/>
 </p>
 
 This distance formula is different from Euclidean distance because it does not measure the magnitude nor the angle of the line connecting two points. In certain instances, knowing the magnitude of the line between two points is necessary in a \\(k\\)-NN problem. 
