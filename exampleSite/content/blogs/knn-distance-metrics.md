@@ -62,8 +62,8 @@ When calculating the similarity or distance between two houses, using the Euclid
 ### **Minkowski Distance**
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/minkowski_distance.svg" 
-           width="40%"/>
+      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/e91ba6288d7acfe2ea5af2b1f6501b185f07f3e9/exampleSite/content/blogs/knn-distance/minkowski_distance.svg" 
+           width="60%"/>
 </p>
 
 This distance formula is unique in that it includes both Euclidean and Manhattan distances as special cases, when \\(p=2\\) and \\(p=1\\), respectively. Using this distance formula allows us to control a single variable, \\(p\\), to get either formula. 
@@ -78,7 +78,7 @@ In general, a higher value of \\(p\\) can give more importance to larger differe
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/portfolio/8a0c2efb79e280e357967627c45afbfdcbf50e4e/exampleSite/content/blogs/knn-distance/cosine_similarity.svg" 
-           width="40%"/>
+           width="50%"/>
 </p>
 
 If you’ve taken a linear algebra class, you’ve definitely seen this formula before. This equation calculates \\(\cos{(\theta)}\\) , where \\(\theta\\) represents the angle between two non-zero feature vectors. It involves taking the dot product of two vectors in the numerator, then dividing it by the length of each vector.
@@ -86,7 +86,7 @@ If you’ve taken a linear algebra class, you’ve definitely seen this formula 
 In a linear algebra textbook, you might see a similar equation that looks like this:
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/lin_alg_cosine_sim.svg" />
+      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/508cb4ede63bfe74b09733c95f8bbf59b6e9d576/exampleSite/content/blogs/knn-distance/lin_alg_cosine_sim.svg" width="60%"/>
 </p>
 
 This is the same formula, where \\(\vec{x}\\) and \\(\vec{y}\\)  represent two feature vectors, and \\(\|\|\vec{x}\|\|\\) and \\(\|\|\vec{y}\|\|\\) are the lengths of each vector. This formula measures the similarity of two vectors. Orthogonal vectors, i.e., vectors where \\(\cos{(\theta)} \approxeq 0\\), have *no similarity*, while vectors where \\(\cos{(\theta)} \approxeq 1\\) have the *most similarity*. This can be seen graphically, as below:
