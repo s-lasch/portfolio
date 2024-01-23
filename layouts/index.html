@@ -1,4 +1,3 @@
-<!-- head -->
 {{ define "head" }}
 <meta name="description" content={{ .Site.Params.description }}>
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/index.css" media="all">
@@ -22,12 +21,10 @@
 </script>
 {{ end }}
 
-<!-- title -->
 {{ define "title" }}
 {{ .Site.Title }}
 {{ end }}
 
-<!-- body -->
 {{ define "main" }}
 {{- partial "sections/hero/index.html" . -}}
 {{- partial "sections/about.html" . -}}
