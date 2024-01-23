@@ -25,8 +25,8 @@ We use distance formulas in \\(k\\)-NN  to determine the proximity of data point
 The first—and most common—distance formula is the **Euclidean distance**. 
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/euclidean_distance.svg" 
-           width="40%"/>
+      <img src="https://raw.githubusercontent.com/s-lasch/portfolio/3bf29a5d9bb4f88a9ab2e78445a0e44d45f36189/exampleSite/content/blogs/knn-distance/euclidean_distance.svg" 
+           width="60%"/>
 </p>
 
 This is calculated by finding the difference between elements in list \\(x\\) with elements in list \\(y\\), calculating the sum of those differences, and taking the square root of the sum. This finds the **linear distance** between two points. 
