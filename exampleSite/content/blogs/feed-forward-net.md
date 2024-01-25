@@ -61,7 +61,7 @@ The reason we are using sigmoid as our activation function is because our model 
 The reason we are using 4 sigmoid functions is quite simple. Think of it this way: what we need to do is create a sort of perimeter around the data points. That will determine a threshold of sorts, where once a value has passed in either the \\( x_1 \\) or \\( x_2 \\) direction, a value becomes red.
 
 <div style="text-align: center;">
-  <img src="https://rawcdn.githack.com/s-lasch/portfolio/91f0e7c9dfb29c84eed4f7fb7f32fc3a9b6fb698/exampleSite/content/blogs/feed-forward-net/neural_network_example_sigmoids.svg" />
+  <img src="https://rawcdn.githack.com/s-lasch/portfolio/91f0e7c9dfb29c84eed4f7fb7f32fc3a9b6fb698/exampleSite/content/blogs/feed-forward-net/neural_network_example_sigmoids.svg" width="60%"/>
 </div>
 
 ## Neural Network Programmatically
