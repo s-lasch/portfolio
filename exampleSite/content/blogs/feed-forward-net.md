@@ -38,8 +38,9 @@ plt.scatter(X[Y==0, 0], X[Y==0,1], color="blue")
 plt.scatter(X[Y==1, 0], X[Y==1, 1], color="red")
 plt.show()
 ```
-
-<img src="https://rawcdn.githack.com/s-lasch/portfolio/ca0a02197a7198f97c23dbf70348493e714aecb8/exampleSite/content/blogs/feed-forward-net/neural_network_example.png" />
+<div style="text-align: center;">
+  <img src="https://rawcdn.githack.com/s-lasch/portfolio/ca0a02197a7198f97c23dbf70348493e714aecb8/exampleSite/content/blogs/feed-forward-net/neural_network_example.png" />
+</div>
 
 Training a model to classify points based on this dataset must be done using a neural network. This is because we need multiple perceptrons working simultaneously for this model to produce accurate results.
 
@@ -48,8 +49,9 @@ Training a model to classify points based on this dataset must be done using a n
 
 You have probably seen a graph representing a neural network before. The diagram below shows the flow of values from the input end to the output end. 
 
-<img src="https://rawcdn.githack.com/s-lasch/portfolio/ca0a02197a7198f97c23dbf70348493e714aecb8/exampleSite/content/blogs/feed-forward-net/neural_net_graph.png" />
-
+<div style="text-align: center;">
+  <img src="https://rawcdn.githack.com/s-lasch/portfolio/ca0a02197a7198f97c23dbf70348493e714aecb8/exampleSite/content/blogs/feed-forward-net/neural_net_graph.png" />
+</div>
 
 We will have 2 inputs and a bias, a 4-node hidden layer using sigmoid activation function, and a single output: the probability that a given point is red. 
 
@@ -58,8 +60,9 @@ The reason we are using sigmoid as our activation function is because our model 
 
 The reason we are using 4 sigmoid functions is quite simple. Think of it this way: what we need to do is create a sort of perimeter around the data points. That will determine a threshold of sorts, where once a value has passed in either the \\( x_1 \\) or \\( x_2 \\) direction, a value becomes red.
 
-<img src="https://rawcdn.githack.com/s-lasch/portfolio/91f0e7c9dfb29c84eed4f7fb7f32fc3a9b6fb698/exampleSite/content/blogs/feed-forward-net/neural_network_example_sigmoids.svg" />
-
+<div style="text-align: center;">
+  <img src="https://rawcdn.githack.com/s-lasch/portfolio/91f0e7c9dfb29c84eed4f7fb7f32fc3a9b6fb698/exampleSite/content/blogs/feed-forward-net/neural_network_example_sigmoids.svg" />
+</div>
 
 ## Neural Network Programmatically
 
@@ -150,7 +153,9 @@ for i in range(epochs):
 
 Here is a GIF that shows the visualization of the training process. It uses a [`contourf()`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.contourf.html) plot to show the decision boundaries between the red and blue classes. Areas with lighter color represent a reduced probability that a given data point is either red or blue, though any value \\( P \ge 0.5 \\) is considered red.
 
-<img src="https://rawcdn.githack.com/s-lasch/portfolio/ca0a02197a7198f97c23dbf70348493e714aecb8/exampleSite/content/blogs/feed-forward-net/neural_network_example.gif" />
+<div style="text-align: center;">
+  <img src="https://rawcdn.githack.com/s-lasch/portfolio/ca0a02197a7198f97c23dbf70348493e714aecb8/exampleSite/content/blogs/feed-forward-net/neural_network_example.gif" />
+</div>
 
 The last step is to ask the model to classify a new point that it has never seen before. We’ll use the black point at \\( (-0.5, -0.4) \\) for this. 
 
