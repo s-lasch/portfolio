@@ -39,7 +39,7 @@ plt.scatter(X[Y==1, 0], X[Y==1, 1], color="red")
 plt.show()
 ```
 
-<img src="https://raw.githubusercontent.com/s-lasch/portfolio/master/exampleSite/content/blogs/feed-forward-net/neural_network_example.png" />
+<img src="https://rawcdn.githack.com/s-lasch/portfolio/ca0a02197a7198f97c23dbf70348493e714aecb8/exampleSite/content/blogs/feed-forward-net/neural_network_example.png" />
 
 Training a model to classify points based on this dataset must be done using a neural network. This is because we need multiple perceptrons working simultaneously for this model to produce accurate results.
 
@@ -48,7 +48,7 @@ Training a model to classify points based on this dataset must be done using a n
 
 You have probably seen a graph representing a neural network before. The diagram below shows the flow of values from the input end to the output end. 
 
-<img src="https://raw.githubusercontent.com/s-lasch/portfolio/master/exampleSite/content/blogs/feed-forward-net/neural_net_graph.png" />
+<img src="https://rawcdn.githack.com/s-lasch/portfolio/ca0a02197a7198f97c23dbf70348493e714aecb8/exampleSite/content/blogs/feed-forward-net/neural_net_graph.png" />
 
 
 We will have 2 inputs and a bias, a 4-node hidden layer using sigmoid activation function, and a single output: the probability that a given point is red. 
@@ -150,7 +150,7 @@ for i in range(epochs):
 
 Here is a GIF that shows the visualization of the training process. It uses a [`contourf()`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.contourf.html) plot to show the decision boundaries between the red and blue classes. Areas with lighter color represent a reduced probability that a given data point is either red or blue, though any value \\( P \ge 0.5 \\) is considered red.
 
-<img src="https://github.com/s-lasch/portfolio/blob/master/exampleSite/content/blogs/feed-forward-net/neural_network_example.gif" />
+<img src="https://rawcdn.githack.com/s-lasch/portfolio/ca0a02197a7198f97c23dbf70348493e714aecb8/exampleSite/content/blogs/feed-forward-net/neural_network_example.gif" />
 
 The last step is to ask the model to classify a new point that it has never seen before. We’ll use the black point at \\( (-0.5, -0.4) \\) for this. 
 
