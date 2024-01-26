@@ -18,9 +18,9 @@ This article goes into detail about the implementation of cross validation for k
 
 ## **What is Cross-Validation**
 
-Cross-validation is a technique used to assess the performance and generalization ability of machine learning models. It involves splitting the data into multiple subsets to train and evaluate the model multiple times. Some benefits to cross-validation is that it helps estimate how well a model will perform on unseen data and can be used to compare different models. It can also be used to evaluate the model's performance and determine the optimal value of $k$ for a $k$-NN classification model.
+Cross-validation is a technique used to assess the performance and generalization ability of machine learning models. It involves splitting the data into multiple subsets to train and evaluate the model multiple times. Some benefits to cross-validation is that it helps estimate how well a model will perform on unseen data and can be used to compare different models. It can also be used to evaluate the model's performance and determine the optimal value of \\(k\\) for a \\(k\\)-NN classification model.
 
-When thinking about a $k$NN classification model, or **$k$-classifier** for short, there is the obvious problem about a tie between one or more classes. 
+When thinking about a \\(k\\)NN classification model, or **\\(k\\)-classifier** for short, there is the obvious problem about a tie between one or more classes. 
 
 
 ## **Dealing With Ties**
@@ -31,7 +31,7 @@ When thinking about a $k$NN classification model, or **$k$-classifier** for shor
 <p align="center"><em>Fig 1. Example of a tie (image by author)</em></p>
 </p>
 
-For a $k$-classifier, ties are determined as in Fig. 1. The circle represents an area in which all data points *within the circle* count as a neighbor. In this case, the new point is equidistant from the square and the X, and since our circle defines 2 neighbors, we have a tie. This tells us that it would be a wise decision to choose a fixed value for $k$, say $k=3$ so that we can reduce the chances of a tie.
+For a \\(k\\)-classifier, ties are determined as in Fig. 1. The circle represents an area in which all data points *within the circle* count as a neighbor. In this case, the new point is equidistant from the square and the X, and since our circle defines 2 neighbors, we have a tie. This tells us that it would be a wise decision to choose a fixed value for \\(k\\), say \\(k=3\\) so that we can reduce the chances of a tie.
 
 This raises a problem since our classifier selects the class label with the minimum distance from our new point, yet in this case, the distances are equal.
 
@@ -79,9 +79,9 @@ col_0
 count       53    56    55     55
 ```
 
-Now we can begin with the $k$ part of the $k$-classifier. Essentially, the value $k$ represents the number of neighbors for our model to account for when it is trying to classify a new datapoint. As alluded to earlier, and from [this post](https://stats.stackexchange.com/questions/43388/different-use-of-neighbors-in-knn-classification-algorithm), we don't necessarily need to choose a fixed value for $k$. 
+Now we can begin with the \\(k\\) part of the \\(k\\)-classifier. Essentially, the value \\(k\\) represents the number of neighbors for our model to account for when it is trying to classify a new datapoint. As alluded to earlier, and from [this post](https://stats.stackexchange.com/questions/43388/different-use-of-neighbors-in-knn-classification-algorithm), we don't necessarily need to choose a fixed value for \\(k\\). 
 
-A similar result can be obtained by drawing a circle with a given radius, $r$, such that all instances within the resulting circle count as a neighbor. For this example, we will be using the former approach, by finding an optimal number of neighbors that minimizes false positives and false negatives.
+A similar result can be obtained by drawing a circle with a given radius, \\(r\\), such that all instances within the resulting circle count as a neighbor. For this example, we will be using the former approach, by finding an optimal number of neighbors that minimizes false positives and false negatives.
 
 ``` python
 # 1 nearest neighbor
@@ -106,7 +106,7 @@ row_0
 3           2      8       8      35
 ```
 
-Because we are cross-validating, let's pick another value for $k$, say $k=3$. Here we have the following:
+Because we are cross-validating, let's pick another value for \\(k\\), say \\(k=3\\). Here we have the following:
 
 ``` python
 # 3 nearest neighbors
@@ -131,7 +131,7 @@ row_0
 3           0      8       8      40
 ```
 
-We'll do this two more times, when $k=7$ and when $k=9$, and compare the resulting tables.
+We'll do this two more times, when \\(k=7\\) and when \\(k=9\\), and compare the resulting tables.
 
 ``` text
 Confusion Matrix (7 neighbors):
@@ -152,11 +152,11 @@ row_0
 3           0      8       6      38
 ```
 
-Doing some simple calculations, it seems that the optimal value of $k$ is 7. Do note that we want to choose odd values for $k$ so that we avoid ties.
+Doing some simple calculations, it seems that the optimal value of \\(k\\) is 7. Do note that we want to choose odd values for \\(k\\) so that we avoid ties.
 
 
 ## **The Resulting Matrix**
 
-The outputs above are called **confusion matrices**. They represent the truth values for each value of $k$. The true class labels are represented by the `row_0` column. Each row in the table corresponds to a specific true class label, and the counts in each cell indicate the number of data points that were predicted to and/or actually belong to that class label. 
+The outputs above are called **confusion matrices**. They represent the truth values for each value of \\(k\\). The true class labels are represented by the `row_0` column. Each row in the table corresponds to a specific true class label, and the counts in each cell indicate the number of data points that were predicted to and/or actually belong to that class label. 
 
-These truth values give us a means to evaluate our values for $k$. Refer to [Confusion Matrices](https://s-lasch.github.io/2023/05/22/Confusion-Matrices.html) for more information on confusion matrices, and [Classification Evaluation](https://s-lasch.github.io/2023/05/22/Classification-Evaluation.html) to learn about the evaluation metrics that we can use from a confusion matrix. 
+These truth values give us a means to evaluate our values for \\(k\\). Refer to [Confusion Matrices](https://s-lasch.github.io/2023/05/22/Confusion-Matrices.html) for more information on confusion matrices, and [Classification Evaluation](https://s-lasch.github.io/2023/05/22/Classification-Evaluation.html) to learn about the evaluation metrics that we can use from a confusion matrix. 
