@@ -7,7 +7,7 @@ tags:
   - data viz
   - plotly
 image: /images/math.gif
-description: "This article goes into detail about the implementation of cross-validation for \\(k\\)-NN classifiers, classificaiton ties, and touches on confusion matrices."
+description: "This article goes into detail about the implementation of cross-validation for k-NN classifiers, classificaiton ties, and touches on confusion matrices."
 toc: true
 mathjax: true
 plotly: true
