@@ -35,7 +35,7 @@ For a \\(k\\)-classifier, ties are determined as in Fig. 1. The circle represent
 
 This raises a problem since our classifier selects the class label with the minimum distance from our new point, yet in this case, the distances are equal.
 
-Functions such as [sklearn.metrics.confusion_matrix()](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html) break these ties randomly. This is largely to prevent bias in the models. Additionally, this is why counts of truth values may be inconsistent. Obviously, the example above is a very over-simplified one, but breaking ties with limited bias is important when making predictions. Model bias is one area that is constantly under scrutiny, especially with text-based models such as GPT and BERT, and also with classification models.
+Functions such as [`sklearn.metrics.confusion_matrix()`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html) break these ties randomly. This is largely to prevent bias in the models. Additionally, this is why counts of truth values may be inconsistent. Obviously, the example above is a very over-simplified one, but breaking ties with limited bias is important when making predictions. Model bias is one area that is constantly under scrutiny, especially with text-based models such as GPT and BERT, and also with classification models.
 
 
 ## **Implementing Cross-Validation**
