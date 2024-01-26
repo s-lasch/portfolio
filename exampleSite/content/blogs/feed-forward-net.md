@@ -44,6 +44,8 @@ plt.show()
 
 Training a model to classify points based on this dataset must be done using a neural network. This is because we need multiple perceptrons working simultaneously for this model to produce accurate results.
 
+## What is a Perceptron?
+At its most basic level, a [perceptron](https://www.wikiwand.com/en/Perceptron#:~:text=It%20is%20a%20type%20of%20linear%20classifier%2C%20i.e.%20a%20classification%20algorithm%20that%20makes%20its%20predictions%20based%20on%20a%20linear%20predictor%20function%20combining%20a%20set%20of%20weights%20with%20the%20feature%20vector.) is a type of artificial neuron that involves the classification of two or more variables. Its specific use case is **linear classification**, where the artificial neuron aims to find a function that best describes the decision boundary between two variables. If we are then given a data value the model has never seen before, it can therefore determine which class the data point belongs to. 
 
 ## Neural Network Visually
 
