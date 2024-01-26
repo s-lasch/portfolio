@@ -13,6 +13,9 @@ mathjax: true
 plotly: true
 ---
 
+This article goes into detail about the implementation of cross validation for kNN classifiers, classificaiton ties, and touches on confusion matrices.
+
+
 ## **What is Cross-Validation**
 
 Cross-validation is a technique used to assess the performance and generalization ability of machine learning models. It involves splitting the data into multiple subsets to train and evaluate the model multiple times. Some benefits to cross-validation is that it helps estimate how well a model will perform on unseen data and can be used to compare different models. It can also be used to evaluate the model's performance and determine the optimal value of $k$ for a $k$-NN classification model.
