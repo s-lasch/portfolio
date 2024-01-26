@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Cross Validation"
 date: 2023-05-26T11:08:42-05:00
 draft: false
 author: "Steven Lasch"
@@ -13,14 +13,14 @@ mathjax: true
 plotly: true
 ---
 
-### **What is Cross-Validation**
+# **What is Cross-Validation**
 
 Cross-validation is a technique used to assess the performance and generalization ability of machine learning models. It involves splitting the data into multiple subsets to train and evaluate the model multiple times. Some benefits to cross-validation is that it helps estimate how well a model will perform on unseen data and can be used to compare different models. It can also be used to evaluate the model's performance and determine the optimal value of $k$ for a $k$-NN classification model.
 
 When thinking about a $k$NN classification model, or **$k$-classifier** for short, there is the obvious problem about a tie between one or more classes. 
 
 
-### **Dealing With Ties**
+# **Dealing With Ties**
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/portfolio/e2f677f8fd23674bf8d7a835b565558f67649e2f/exampleSite/content/blogs/knn-distance/knn_tie_example.svg" 
@@ -35,7 +35,7 @@ This raises a problem since our classifier selects the class label with the mini
 Functions such as `confusion_matrix()` from the `sklearn` library break these ties randomly. This is largely to prevent bias in the models. Additionally, this is why counts of truth values may be inconsistent. Obviously, the example above is a very over-simplified one, but breaking ties with limited bias is important when making predictions. Model bias is one area that is constantly under scrutiny, especially with text-based models such as GPT and BERT, and also with classification models.
 
 
-### **Implementing Cross-Validation**
+# **Implementing Cross-Validation**
 
 For this example, we will be using the [Howells dataset](https://web.utk.edu/~auerbach/HOWL.htm), available [here](https://www.statsmachine.net/databases/STAT_139/Howells.csv). It is dataset that contains craniometric measurements taken from over 2,500 human crania from 28 populations between 1965 and 1980 by Dr. William W. Howells. This example will attempt to classify either BERG males/females or NORSE males/females based on several features of the dataset. 
 
@@ -152,7 +152,7 @@ row_0
 Doing some simple calculations, it seems that the optimal value of $k$ is 7. Do note that we want to choose odd values for $k$ so that we avoid ties.
 
 
-### **The Resulting Matrix**
+# **The Resulting Matrix**
 
 The outputs above are called **confusion matrices**. They represent the truth values for each value of $k$. The true class labels are represented by the `row_0` column. Each row in the table corresponds to a specific true class label, and the counts in each cell indicate the number of data points that were predicted to and/or actually belong to that class label. 
 
