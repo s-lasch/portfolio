@@ -13,7 +13,7 @@ mathjax: true
 plotly: true
 ---
 
-This article goes into detail about the implementation of cross validation for \\( k \\)-NN classifiers, classificaiton ties, and touches on confusion matrices.
+This article goes into detail about the implementation of cross validation for k-NN classifiers, classificaiton ties, and touches on confusion matrices.
 
 
 ## **What is Cross-Validation**
