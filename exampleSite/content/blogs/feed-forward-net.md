@@ -154,7 +154,7 @@ for i in range(epochs):
 Here is a GIF that shows the visualization of the training process. It uses a [`contourf()`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.contourf.html) plot to show the decision boundaries between the red and blue classes. Areas with lighter color represent a reduced probability that a given data point is either red or blue, though any value \\( P \ge 0.5 \\) is considered red.
 
 <div style="text-align: center;">
-  <img src="https://rawcdn.githack.com/s-lasch/portfolio/ca0a02197a7198f97c23dbf70348493e714aecb8/exampleSite/content/blogs/feed-forward-net/neural_network_example.gif" />
+  <img src="https://rawcdn.githack.com/s-lasch/portfolio/721b15eab2e28813d08be5ba7f167554ff348163/exampleSite/content/blogs/feed-forward-net/neural_network_example.gif" />
 </div>
 
 The last step is to ask the model to classify a new point that it has never seen before. We’ll use the black point at \\( (-0.5, -0.4) \\) for this. 
