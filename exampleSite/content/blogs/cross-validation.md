@@ -6,7 +6,7 @@ author: "Steven Lasch"
 tags:
   - data viz
   - plotly
-image: knn-distance/data_validation.gif
+image: images/data_validation.gif
 description: "This article goes into detail about the implementation of cross validation for kNN classifiers, classificaiton ties, and touches on confusion matrices."
 toc: true
 mathjax: true
