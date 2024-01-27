@@ -7,4 +7,5 @@ tags:
 image:
 description:
 toc:
+mathjax: true
 ---
