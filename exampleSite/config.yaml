@@ -118,8 +118,8 @@ params:
   hero:
     enable: true
     intro: "Hello! I'm"
-    title: "Steven Lasch."
-    subtitle: "A data-driven professional."
+    title: "Steven Lasch"
+    subtitle: "A data-driven professional"
     content: "Dedicated to creating data-driven products. Proficient in data visualization, data engineering, database management, and machine learning. "
     image: /images/me.png
     bottomImage:
