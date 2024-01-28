@@ -10,9 +10,9 @@
                     </div>
                     {{ if .Site.Params.contact.formspree.enable | default false }}
                     <div class="row justify-content-center">
-                        <form id="contact-form" action="https://formspree.io/f/{{ .Site.Params.contact.formspree.formId }}" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
+                        <form id="contact-form" action="https://formspree.io/f/mvojardv" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
                             <div class="form-group pt-3">
-                                <input type="email" class="form-control"  name="email" required="true" placeholder='{{ .Site.Params.contact.formspree.emailCaption | emojify | default "Enter your email" }}'>
+                                <input type="email" class="form-control" name="email" required="true" placeholder='{{ .Site.Params.contact.formspree.emailCaption | emojify | default "Enter your email" }}'>
                             </div>
                             <div class="form-group pt-3">
                                 <textarea class="form-control" name="message" required="true" placeholder='{{ .Site.Params.contact.formspree.messageCaption | emojify | default "Enter your message" }}' rows="3"></textarea>
