@@ -10,7 +10,31 @@
                     </div>
                     {{ if .Site.Params.contact.formspree.enable | default false }}
                     <div class="row justify-content-center">
-                        <form id="contact-form" action="https://formspree.io/f/{{ .Site.Params.contact.formspree.formId }}" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
+                        <!-- modify this form HTML and place wherever you want your form -->
+                        <form
+                            id="contact-form"
+                            class="col-md-7"
+                            action="https://formspree.io/f/{{ .Site.Params.contact.formspree.formId }}"
+                            method="POST"
+                        >
+                          <label>
+                            Your email:
+                            <input 
+                                class="form-control" 
+                                type="email" 
+                                name="email" 
+                                placeholder='{{ .Site.Params.contact.formspree.emailCaption | emojify | default "Enter your email" }}'
+                            >
+                          </label>
+                          <label>
+                            Your message:
+                            <textarea name="message"></textarea>
+                          </label>
+                          <!-- your other form fields go here -->
+                          <button type="submit">Send</button>
+                        </form>
+                        
+<!--                         <form id="contact-form" action="https://formspree.io/f/{{ .Site.Params.contact.formspree.formId }}" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
                             <div class="form-group pt-3">
                                 <input type="email" class="form-control"  name="email" required="true" placeholder='{{ .Site.Params.contact.formspree.emailCaption | emojify | default "Enter your email" }}'>
                             </div>
@@ -20,7 +44,7 @@
                             <div class="form-group text-center pt-3">
                                 <button type="submit" class="btn">{{ .Site.Params.contact.btnName | default "Get in Touch" }}</button>
                             </div>
-                        </form>
+                        </form> -->
                     </div>
                     {{ else if .Site.Params.contact.email }}
                     <div class="text-center pt-3">
