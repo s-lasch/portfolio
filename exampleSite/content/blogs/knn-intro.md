@@ -7,13 +7,13 @@ tags:
   - data viz
   - plotly
 image: /images/data_validation.gif
-description: "This article answers the question 'what is a k-nearest neighbors algorithm?' and 'why is it an important classification model?'"
+description: 
 toc: true
 mathjax: true
 plotly: false
 ---
 
-> **NOTE:** *all data and figures in this post are made using* `numpy` *and* `matplotlib`. 
+"This article answers the question 'what is a k-nearest neighbors algorithm?' and 'why is it an important classification model?'" **NOTE:** *all data and figures in this post are made using* `numpy` *and* `matplotlib`. 
 
 ### **Overview**
 
