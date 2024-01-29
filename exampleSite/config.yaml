@@ -274,23 +274,23 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Personal Blog/Website
-        content: This project involves developing a statically generated website using Hugo. I created this to blog about topics relevant to data science, or problems that I was running into and finding solutions for.
-        image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://steven-lasch.com
-        badges:
-          - "Hugo"
-          - "Web dev"
-          - "Javascript"
-        links:
-          # - icon: fa fa-envelope
-          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/s-lasch/personal-website
-          # - icon: fab fa-twitter
-          #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+      # - title: Personal Blog/Website
+      #   content: This project involves developing a statically generated website using Hugo. I created this to blog about topics relevant to data science, or problems that I was running into and finding solutions for.
+      #   image: /images/projects/profile.png
+      #   featured:
+      #     name: Demo
+      #     link: https://steven-lasch.com
+      #   badges:
+      #     - "Hugo"
+      #     - "Web dev"
+      #     - "Javascript"
+      #   links:
+      #     # - icon: fa fa-envelope
+      #     #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+      #     - icon: fab fa-github
+      #       url: https://github.com/s-lasch/personal-website
+      #     # - icon: fab fa-twitter
+      #     #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
       - title: HVAC Website Development
         content: For this project, I developed a website for David Lasch Heating & A/C, a small HV/AC business from Conneautville, PA. I worked with them to create a website that implements Google Analytics to track website impressions, page visits, and other data regularly.
