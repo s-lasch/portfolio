@@ -296,7 +296,7 @@ params:
         content: For this project, I developed a website for David Lasch Heating & A/C, a small HV/AC business from Conneautville, PA. I worked with them to create a website that implements Google Analytics to track website impressions, page visits, and other data regularly.
         image: /images/projects/dlhvac.png
         featured:
-          name: Demo
+          name: View
           link: https://davidlaschhvac.com
         badges:
           - "Hugo"
@@ -310,7 +310,7 @@ params:
         content: This project helped me to appply my knowledge of data collection via dynamic web scraping. I used it to export my typing data as a CSV file, where I then uploaded it to my GitHub repository. After this, I developed a dashboard application that I coded in Python.
         image: /images/projects/monkeytype_visualization.png
         featured:
-          name: Demo
+          name: View
           link: https://typing-test-gz3r.onrender.com/
         badges:
           - "Python"
@@ -324,7 +324,7 @@ params:
         content: For this project, I collected fatal police shootings data from open-source repositories, standardized the data, and developed a Python dashboard displaying the results. This project taught me about web development through HTML, JavaScript, and CSS.
         image: /images/projects/fatal-force.png
         featured:
-          name: Demo
+          name: View
           link: https://fatal-force.onrender.com/
         badges:
           - "Python"
