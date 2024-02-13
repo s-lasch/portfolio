@@ -311,7 +311,7 @@ params:
         image: /images/projects/monkeytype_visualization.png
         featured:
           name: View
-          link: https://typing-test-gz3r.onrender.com/
+          link: https://slasch-typing-project.streamlit.app/
         badges:
           - "Python"
           - "Data viz"
