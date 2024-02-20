@@ -38,7 +38,9 @@ cartesian_product = [(a,b) for a in A for b in B]
 Which produces the following output:
 
 ```text
-[(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)]
+[(1, 1), (1, 2), (1, 3),
+(2, 1), (2, 2), (2, 3),
+(3, 1), (3, 2), (3, 3)]
 ```
 
 ## Applications
