@@ -325,14 +325,14 @@ params:
         image: /images/projects/fatal-force.png
         featured:
           name: View
-          link: https://fatal-force.onrender.com/
+          link: https://slasch-fatal-force.streamlit.app/
         badges:
           - "Python"
           - "Data viz"
           - "Data analysis"
         links:
           - icon: fab fa-github
-            url: https://github.com/s-lasch/fatalforce
+            url: https://github.com/s-lasch/fatal-force
   #Contact
   contact:
     enable: true
