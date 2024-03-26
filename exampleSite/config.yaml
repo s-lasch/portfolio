@@ -128,7 +128,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "/images/resume.pdf"
+      url: "/images/Steven Lasch Resume.pdf"
       download: true
       newPage: false
     socialLinks:
