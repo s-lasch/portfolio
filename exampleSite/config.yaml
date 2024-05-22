@@ -226,8 +226,8 @@ params:
         date: "2020 - 2024"
         GPA: "4.0 (cumulative)"
         content: |-
-            - Graduated summa cum laude and maintained a cumulative GPA of 4.0
-            - Published paper titled [American Sign Language Translation Using Transfer Learning](https://ieeexplore.ieee.org/document/10291026) for my senior project
+            - Graduated summa cum laude.
+            - Published paper titled [American Sign Language Translation Using Transfer Learning](https://ieeexplore.ieee.org/document/10291026) for my senior project.
 
       # - title: "Bachelor of Science in Computer Science"
       #   school:
