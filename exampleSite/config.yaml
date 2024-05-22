@@ -224,7 +224,7 @@ params:
           name: "Mercyhurst University"
           url: "https://mercyhurst.edu"
         date: "2020 - 2024"
-        GPA: 4.0 "(cumulative)"
+        GPA: 4.0 (cumulative)
         content: |-
             - Graduated summa cum laude.
             - Published paper titled [American Sign Language Translation Using Transfer Learning](https://ieeexplore.ieee.org/document/10291026) for my senior project.
