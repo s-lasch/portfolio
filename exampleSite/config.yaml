@@ -157,9 +157,9 @@ params:
       items:
         - "Python"
         - "SQL"
-        - "Hugo"
+        - "Tableau"
         - "OpenAI API"
-        - "Google Colab"
+        - "Microsoft Suite"
         - "Jupyter Notebooks"
 
   # Experience
@@ -170,17 +170,17 @@ params:
       - job: "Senior Data Analyst"
         company: "Innovation Entente Lab"
         companyUrl: "https://www.mercyhurst.edu/academics/beehive"
-        date: "June 2023 - present"
+        date: "June 2023 - May 2024"
         # featuredLink:
         #   enable: false
         #   name: "View the project"
         #   url: "https://example.com"
-        content: "I am currently working as a data analyst at Mercyhurst University's [IEL](https://www.mercyhurst.edu/academics/beehive) in Erie, PA. I work projects that use data-driven insights to aid small businesses in the greater Erie area."
+        content: "I worked as a data analyst at Mercyhurst University's [IEL](https://www.mercyhurst.edu/academics/beehive) in Erie, PA. I work projects that use data-driven insights to aid small businesses in the greater Erie area."
 
       - job: "Data Scientist"
         company: "Mercyhurst University CIRAT"
-        companyUrl: "https://www.mercyhurst.edu/academics/cirat"
-        date: "Apr 2022 - present"
+        companyUrl: "https://mucirat.com"
+        date: "Apr 2022 - May 2024"
         # featuredLink:
         #   enable: false
         #   url: "https://example.com"
@@ -188,7 +188,7 @@ params:
         #   enable: true
         #   content: Project management experience since Jan 2024.
         content: |
-          I have participated in several projects and internships through the [CIRAT](https://www.mercyhurst.edu/academics/cirat), and most recently I have taken a team lead position for our AI and Academics project, where we are aiding university administration by leveraging AI.
+          I participated in several projects and internships through Mercyhurst's [CIRAT program](https://mucirat.com), and most recently I have taken a team lead position, where my team and I successfully developed and deployed a chatbot for the CIRAT website.
 
           - Participated in the creation of a demo chatbot to answer faculty FAQ.
           - Assisted in creating a quality assurance mechanism for easy chatbot updating.
@@ -198,7 +198,7 @@ params:
         companyUrl: "https://www.empower.ai/"
         date: "Apr 2022 - Apr 2023"
         content: |
-          I have worked as a contracted data scientist for Empower AI. For this project, we were tasked with creating a programming language translator from legacy languages such as Cobol, PowerBuilder, and Fortran into modern ones such as Java, C, and Python.
+          I worked as a contracted data scientist for Empower AI. For this project, we were tasked with creating a programming language translator from legacy languages such as Cobol, PowerBuilder, and Fortran into modern ones such as Java, C, and Python.
 
           - Aided in the scraping of open-source code repositories.
           - Cleaned scraped repositories for standardization for ease of use in machine learning training.
@@ -209,7 +209,7 @@ params:
         companyUrl: "https://mercyhurst.edu"
         date: "Sep 2021 - present"
         content: |
-          I am currently working as a computer science tutor. I love tutoring students in Python programming concepts such as data analysis, data visualization, data structures and algorithms. I tutor between 5 and 10 students on a weekly basis in these concepts.
+          I worked as a computer science tutor during college. I tutored students in Python programming concepts such as data analysis, data visualization, data structures, and algorithms. I tutored between 5 and 10 students on a weekly basis.
 
 
 
@@ -226,10 +226,9 @@ params:
         date: "2020 - 2024"
         GPA: "4.0 (cumulative)"
         content: |-
-          Extracurricular Activities
-            - Dean's list scholar for 7 consecutive semesters.
-            - Published paper titled [American Sign Language Translation Using Transfer Learning](https://ieeexplore.ieee.org/document/10291026) as senior project.
-            - Used open-sourced pretrained transformers from [HuggingFace](https://huggingface.co/) to translate ASL Gloss to English with high accuracy, and proposed a new state of the art data set. 
+            - Graduated summa cum laude and maintained a cumulative GPA of 4.0
+            - Published paper titled [American Sign Language Translation Using Transfer Learning](https://ieeexplore.ieee.org/document/10291026) for my senior project
+
       # - title: "Bachelor of Science in Computer Science"
       #   school:
       #     name: "Massachusetts Institute of Technology"
