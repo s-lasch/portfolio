@@ -16,11 +16,13 @@ mathjax: true
 plotly: true
 ---
 
-In this article, we will walk through an example of a classification problem that is more complex. For this approach, we will be implementing a simple feed-forward neural network to determine the classes. I would recommend using an environment such as Google Colab that can run Jupyter Notebooks since all of the code in this article is written for that format.
+In this article, we will walk through an example of a classification problem that is more complex. We will attempt to classify points within concentric circles. Linear or logistic regression algorithms are not suited for this kind of classification, so we need something more powerful.
+
+For this approach, we will be implementing a simple feed-forward neural network to determine the classes. I would recommend using an environment such as Google Colab that can run Jupyter Notebooks since all of the code in this article is written for that format.
 
 ## Introduction
 
-For clustering and classification purposes, we will be using the [`sklearn.datasets.make_circles()`](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_circles.html) function. Adding that, we get:
+For clustering and classification purposes, we will be using the [`sklearn.datasets.make_circles()`](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_circles.html) function. This function allows us to create a test dataset of points that we are aiming to classify. Blue points represent the outer circle, and red points represent the inner circle. 
 
 ```python
 import numpy as np
@@ -42,14 +44,11 @@ plt.show()
   <img src="https://rawcdn.githack.com/s-lasch/portfolio/ca0a02197a7198f97c23dbf70348493e714aecb8/exampleSite/content/blogs/feed-forward-net/neural_network_example.png" />
 </div>
 
-Training a model to classify points based on this dataset must be done using a neural network. This is because we need multiple perceptrons working simultaneously for this model to produce accurate results.
-
-## What is a Perceptron?
-At its most basic level, a [perceptron](https://www.wikiwand.com/en/Perceptron#:~:text=It%20is%20a%20type%20of%20linear%20classifier%2C%20i.e.%20a%20classification%20algorithm%20that%20makes%20its%20predictions%20based%20on%20a%20linear%20predictor%20function%20combining%20a%20set%20of%20weights%20with%20the%20feature%20vector.) is a type of artificial neuron that involves the classification of two or more variables. Its specific use case is **linear classification**, where the artificial neuron aims to find a function that best describes the decision boundary between two variables. If we are then given a data value the model has never seen before, it can therefore determine which class the data point belongs to. 
+> For this exercise, we will be predicting the probability that a given point is red.
 
 ## Neural Network Visually
 
-You have probably seen a graph representing a neural network before. The diagram below shows the flow of values from the input end to the output end. 
+Training a model to classify points based on this dataset must be done using a neural network. You have probably seen a graph representing a neural network before. The diagram below shows the flow of values from the input end to the output end. 
 
 <div style="text-align: center;">
   <img src="https://rawcdn.githack.com/s-lasch/portfolio/ca0a02197a7198f97c23dbf70348493e714aecb8/exampleSite/content/blogs/feed-forward-net/neural_net_graph.png" />
@@ -57,8 +56,11 @@ You have probably seen a graph representing a neural network before. The diagram
 
 We will have 2 inputs and a bias, a 4-node hidden layer using sigmoid activation function, and a single output: the probability that a given point is red. 
 
-But how can we standardize the outputs of our model to resemble a probability? Enter [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function#Properties:~:text=Thus%20the%20cumulative%20distribution%20functions%20for%20many%20common%20probability%20distributions%20are%20sigmoidal.).
-The reason we are using sigmoid as our activation function is because our model classifies new points based on a probability, which we will call \\( \hat{y} \\) (pronounced "y hat"). The output of the sigmoid function lies between 0 and 1. This is perfect for us since probabilities can only exist between those values.
+## Finding \\( \hat{y} \\)
+
+But how can we standardize the outputs of our model to resemble a probability? To do this, we require an activation function to standardize our model output between a range of numbers. For this exercise, [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function#Properties:~:text=Thus%20the%20cumulative%20distribution%20functions%20for%20many%20common%20probability%20distributions%20are%20sigmoidal.) is a great option.
+
+The reason this is a good choice is due to the output of the sigmoid function. The output lies between \\( 0 \\) and \\( 1 \\). Since our model will classify points based on a probability of being red, (which we will call \\( \hat{y} \\), pronounced "y hat") this funciton is ideal because probabilities can only exist between \\( 0 \\) and \\( 1 \\).
 
 The reason we are using 4 sigmoid functions is quite simple. Think of it this way: what we need to do is create a sort of perimeter around the data points. That will determine a threshold of sorts, where once a value has passed in either the \\( x_1 \\) or \\( x_2 \\) direction, a value becomes red.
 
@@ -66,9 +68,12 @@ The reason we are using 4 sigmoid functions is quite simple. Think of it this wa
   <img src="https://rawcdn.githack.com/s-lasch/portfolio/91f0e7c9dfb29c84eed4f7fb7f32fc3a9b6fb698/exampleSite/content/blogs/feed-forward-net/neural_network_example_sigmoids.svg" width="60%"/>
 </div>
 
-## Neural Network Programmatically
+## The heart of our algorithm
+The core of our model is the perceptron. At its most basic level, a [perceptron](https://www.wikiwand.com/en/Perceptron#:~:text=It%20is%20a%20type%20of%20linear%20classifier%2C%20i.e.%20a%20classification%20algorithm%20that%20makes%20its%20predictions%20based%20on%20a%20linear%20predictor%20function%20combining%20a%20set%20of%20weights%20with%20the%20feature%20vector.) is a type of artificial neuron that involves the classification of two or more variables. Its specific use case is **linear classification**, where the artificial neuron aims to find a function that best describes the decision boundary between two variables. If we are then given a data value the model has never seen before, it can therefore determine which class the data point belongs to. 
 
-Below is the generic template form of a neural network. 
+## Neural network programmatically
+
+Below is the generic template of a neural network with two hidden layers. 
 
 ```python
 import torch
@@ -102,9 +107,9 @@ class Model(nn.Module):
         return [1, pred] if pred >= .5 else [0, pred]
 ```
 
-## Training the Network
+## Training the network
 
-First we must convert our datasets to column matrices.
+To train our model, first we must convert our datasets to column matrices. This is because ML largely relies on core features of linear algebra such as matrix multiplication, which requires that the dimensions of input matrices align. If you treat a dataset as a matrix where each column is a feature and each row is an observation, it becomes convenient to represent weights, gradients, or individual data points as column vectors. This ensures consistency in operations like dot products, matrix multiplication, and matrix transformations.
 
 ```python
 X_tensor = torch.tensor(X).float()                  # already a column matrix
@@ -114,12 +119,9 @@ Y_tensor = torch.tensor(Y).reshape(-1,1).float()    # ML needs column matrices
 Now for the main part, which is training a model on our dataset. The process we must follow is:
 
 1. Set a random seed to ensure reproducibility.
-
-2. Call on our `Model()` class to mimic the network schema.
-
-3. We use BCE as our loss algorithm, as it handles logarithms.
-
-4. We use the [`torch.optim.Adam()`](https://pytorch.org/docs/stable/generated/torch.optim.Adam.html) optimizer because it changes learning rate dynamically.
+2. Call on our `Model()` class to mimic the network diagram.
+3. We use BCE as our loss algorithm, as it handles logarithms which are used in the sigmoid activation function.
+4. We use the [`torch.optim.Adam()`](https://pytorch.org/docs/stable/generated/torch.optim.Adam.html) optimizer because it changes learning rate dynamically rather than wasting resources to find a suitable value.
 5. Train model for \\( x \\) number of epochs so long as the model doesn’t overfit or underfit data.
 
 ```python
@@ -151,13 +153,17 @@ for i in range(epochs):
     print()
 ```
 
-## Visualize the Training Process
+## Visualize the training process
+
+Watching a command line feed is cool and all to see that our model is training, but wouldn't it be cooler if we could see how our model makes decisions in real time?
 
 Here is a GIF that shows the visualization of the training process. It uses a [`contourf()`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.contourf.html) plot to show the decision boundaries between the red and blue classes. Areas with lighter color represent a reduced probability that a given data point is either red or blue, though any value \\( P \ge 0.5 \\) is considered red.
 
 <div style="text-align: center;">
   <img src="https://rawcdn.githack.com/s-lasch/portfolio/721b15eab2e28813d08be5ba7f167554ff348163/exampleSite/content/blogs/feed-forward-net/neural_network_example.gif" />
 </div>
+
+Pretty cool, right?
 
 The last step is to ask the model to classify a new point that it has never seen before. We’ll use the black point at \\( (-0.5, -0.4) \\) for this. 
 
