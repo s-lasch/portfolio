@@ -106,7 +106,7 @@ You can see the differences in each of the three cosine similarities below. In t
 
 In the middle graph, since the two vectors are multiples of each other, and they have the same direction, they fall on the same line in 2D space. This means they are essentially the same vector—**exact similarity**—just with a different magnitude. This is apparent because we have \\(2\vec{x} = \vec{y}\\) in the middle graph. 
 
-Finally, in the rightmost graph, these two vectors are maximally different, with correlating dimensions having opposite signs and with a similarity of \\(-1\\). This means they are **exactly dissimilar**. Like in the middle graph, these vectors are indeed multiples of each other since we have \\(-1\vec{x} = \vec{y}\\). The key difference is that the negative magnitude changes the direction of \\(\vec{y}\\) to the exact opposite of \\(\vec{x}\\). 
+Finally, in the rightmost graph, these two vectors are **exactly dissimilar**, with a similarity of \\(-1\\). Like in the middle graph, these vectors are indeed multiples of each other since we have \\(-1\vec{x} = \vec{y}\\). The key difference here is that the negative magnitude *changes the direction* of \\(\vec{y}\\) to the *exact opposite* of \\(\vec{x}\\).
 
 <br>
 
