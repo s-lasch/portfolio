@@ -58,7 +58,7 @@ We will have 2 inputs and a bias, a 4-node hidden layer using sigmoid activation
 
 ## Finding \\( \hat{y} \\)
 
-But how can we standardize the outputs of our model to resemble a probability? To do this, we require an activation function to standardize our model output between a range of numbers. For this exercise, [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function#Properties:~:text=Thus%20the%20cumulative%20distribution%20functions%20for%20many%20common%20probability%20distributions%20are%20sigmoidal.) is a great option.
+But how can we standardize the outputs of our model to resemble a probability? To do this, we require an activation function to standardize our model output between a range of numbers. For this exercise, [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function#roperties:~:text=Thus%20the%20cumulative%20distribution%20functions%20for%20many%20common%20probability%20distributions%20are%20sigmoidal.) is a great option.
 
 The reason this is a good choice is due to the output of the sigmoid function. The output lies between \\( 0 \\) and \\( 1 \\). Since our model will classify points based on a probability of being red, (which we will call \\( \hat{y} \\), pronounced "y hat") this funciton is ideal because probabilities can only exist between \\( 0 \\) and \\( 1 \\).
 
@@ -157,7 +157,7 @@ for i in range(epochs):
 
 Watching a command line feed is cool and all to see that our model is training, but wouldn't it be cooler if we could see how our model makes decisions in real time?
 
-Here is a GIF that shows the visualization of the training process. It uses a [`contourf()`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.contourf.html) plot to show the decision boundaries between the red and blue classes. Areas with lighter color represent a reduced probability that a given data point is either red or blue, though any value \\( P \ge 0.5 \\) is considered red.
+Here is a GIF that shows the visualization of the training process. It uses a [`contourf()`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.contourf.html) plot to show the decision boundaries between the red and blue classes. Areas with lighter color represent a reduced probability that a given data point is either red or blue, though any value with probability \\( P \ge 0.5 \\) is considered red.
 
 <div style="text-align: center;">
   <img src="https://rawcdn.githack.com/s-lasch/portfolio/721b15eab2e28813d08be5ba7f167554ff348163/exampleSite/content/blogs/feed-forward-net/neural_network_example.gif" />
