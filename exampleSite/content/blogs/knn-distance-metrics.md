@@ -88,25 +88,25 @@ In a linear algebra textbook, you might see a similar equation that looks like t
       <img src="https://raw.githubusercontent.com/s-lasch/portfolio/508cb4ede63bfe74b09733c95f8bbf59b6e9d576/exampleSite/content/blogs/knn-distance/lin_alg_cosine_sim.svg" width="25%"/>
 </p>
 
-This is the same formula, where \\(\vec{x}\\) and \\(\vec{y}\\)  represent two feature vectors, and \\(\|\|\vec{x}\|\|\\) and \\(\|\|\vec{y}\|\|\\) are the lengths of each vector. This formula measures the similarity of two vectors, and an output range of \\([-1, \ 1]\\). Vectors where \\(\cos{(\theta)} \approxeq -1\\), have *exact dissimilarity*, \\(\cos{(\theta)} \approxeq 0\\) (orthogonal vectors), have *no correlation*, and \\(\cos{(\theta)} \approxeq 1\\) have the *exact similarity*. This can be seen graphically, as below:
+This is the same formula, where \\(\vec{x}\\) and \\(\vec{y}\\)  represent two feature vectors, and \\(\|\|\vec{x}\|\|\\) and \\(\|\|\vec{y}\|\|\\) are the lengths of each vector. This formula measures the similarity of two vectors, and it is helpful to remember that the range of cosine is between \\(-1\\) and \\(1\\).  Vectors where \\(\cos{(\theta)} \approxeq -1\\), have *exact dissimilarity*, \\(\cos{(\theta)} \approxeq 0\\) (orthogonal vectors if you know your linear algebra), have *no similarity*, and \\(\cos{(\theta)} \approxeq 1\\) have the *exact similarity*. This can be seen graphically, as below:
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/portfolio/35b26df6a03b462736347811353eefa9edf314d5/exampleSite/content/blogs/knn-distance/cos_similarity_graph.svg" 
            alt=""/>
 </p>
 
-It is important to remember that the range of cosine is between \\(-1\\) and \\(1\\). A value of \\(-1\\) indicates exact dissimilarity, \\(0\\) indicates no similarity, and \\(1\\) indicates exact similarity. In this example, the cosine similarity between the two vectors is \\(-0.7642\\), which indicates \\(\vec{x}\\) and \\(\vec{y}\\) are quite dissimilar.
+In the example above, the cosine similarity between the two vectors is \\(-0.7642\\), which indicates \\(\vec{x}\\) and \\(\vec{y}\\) are have a strong degree of dissimilarity.
 
-You can see the differences in each cosine similarity value below. In the first one, since the two vectors are perpendicular (or orthogonal if you know your linear algebra) they are the least similar. As 2D vectors, the components in both dimensions are maximally different, with correlating dimensions having opposite signs.
+You can see the differences in each of the three cosine similarities below. In the leftmost graph, since the two vectors are perpendicular, they have **no similarity**.
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/portfolio/35b26df6a03b462736347811353eefa9edf314d5/exampleSite/content/blogs/knn-distance/all_cos_sims.svg" 
            alt="" width="100%"/>
 </p>
 
-In the middle graph, since the two vectors are multiples of each other, and they have the same direction, they fall on the same line in 2D space. This means they are essentially the same vector, just with a different magnitude. This is apparent because we have \\(2\vec{x} = \vec{y}\\) in the middle graph. 
+In the middle graph, since the two vectors are multiples of each other, and they have the same direction, they fall on the same line in 2D space. This means they are essentially the same vector—**exact similarity**—just with a different magnitude. This is apparent because we have \\(2\vec{x} = \vec{y}\\) in the middle graph. 
 
-Finally, in the third graph, these two vectors are as dissimilar as they can get, with a similarity of \\(-1\\). Like in the middle graph, these vectors are indeed multiples of each other since we have \\(-1\vec{x} = \vec{y}\\). The key difference is that the negative magnitude changes the direction of \\(\vec{y}\\). 
+Finally, in the rightmost graph, these two vectors are maximally different, with correlating dimensions having opposite signs and with a similarity of \\(-1\\). This means they are **exactly dissimilar**. Like in the middle graph, these vectors are indeed multiples of each other since we have \\(-1\vec{x} = \vec{y}\\). The key difference is that the negative magnitude changes the direction of \\(\vec{y}\\) to the complete opposite of \\(\vec{x}\\), causing the . 
 
 <br>
 
