@@ -6,13 +6,11 @@ author: "Steven Lasch"
 tags:
   - applied math
   - reinforcement learning
-image: /photo-1651340981821-b519ad14da7c.png
+image: photo-1651340981821-b519ad14da7c.png
 description: "This article covers an introduction to Q-Learning, a reinforcement learning concept used in an AI-based simulated stock market trader."
 toc: true
 mathjax: true
 ---
-
-# AI-Assisted Trading Introduction Pt. 1
 
 ## **TLDR**
 > In this post, I will cover concepts in **reinforcement learning (RL)**, specifically Q-Learning, applied to the context of maximizing returns in a simulated stock market environment.
