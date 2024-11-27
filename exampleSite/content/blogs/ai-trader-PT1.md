@@ -6,7 +6,7 @@ author: "Steven Lasch"
 tags:
   - applied math
   - reinforcement learning
-image: photo-1651340981821-b519ad14da7c.png
+image: /images/photo-1651340981821-b519ad14da7c.png
 description: "This article covers an introduction to Q-Learning, a reinforcement learning concept used in an AI-based simulated stock market trader."
 toc: true
 mathjax: true
