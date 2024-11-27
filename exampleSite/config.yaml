@@ -167,10 +167,24 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+    - job: "Business Intelligence Developer"
+        company: "Erie FCU"
+        companyUrl: "https://eriefcu.org"
+        date: "May. 2024 - present"
+        # featuredLink:
+        #   enable: false
+        #   name: "View the project"
+        #   url: "https://example.com"
+        content: |
+          - Use industry standard data visualization software to present data insights to stakeholders across departments.
+          - Design actionable data visualizations and centralized dashboards for marketing, branch operations, and business development departments.
+          - Ensure smooth ETL processing for the credit union's data.
+          - Participated in volunteering opportunities in the Erie area such as cleaning Presque Isle beaches, painting animal shelter rooms, retirement home community events.
+        
       - job: "Senior Data Analyst"
         company: "Innovation Entente Lab"
         companyUrl: "https://www.mercyhurst.edu/academics/beehive"
-        date: "June 2023 - May 2024"
+        date: "Jun. 2023 - May 2024"
         # featuredLink:
         #   enable: false
         #   name: "View the project"
@@ -180,7 +194,7 @@ params:
       - job: "Data Scientist"
         company: "Mercyhurst University CIRAT"
         companyUrl: "https://mucirat.com"
-        date: "Apr 2022 - May 2024"
+        date: "Apr. 2022 - May 2024"
         # featuredLink:
         #   enable: false
         #   url: "https://example.com"
@@ -196,7 +210,7 @@ params:
       - job: "Data Scientist"
         company: "Empower AI"
         companyUrl: "https://www.empower.ai/"
-        date: "Apr 2022 - Apr 2023"
+        date: "Apr. 2022 - Apr. 2023"
         content: |
           I worked as a contracted data scientist for Empower AI. For this project, we were tasked with creating a programming language translator from legacy languages such as Cobol, PowerBuilder, and Fortran into modern ones such as Java, C, and Python.
 
@@ -207,7 +221,7 @@ params:
       - job: "Computer Science Tutor"
         company: "Mercyhurst University"
         companyUrl: "https://mercyhurst.edu"
-        date: "Sep 2021 - present"
+        date: "Sep. 2021 - May 2024"
         content: |
           I worked as a computer science tutor during college. I tutored students in Python programming concepts such as data analysis, data visualization, data structures, and algorithms. I tutored between 5 and 10 students on a weekly basis.
 
