@@ -1,7 +1,7 @@
 ---
 title: "AI-Assisted Trading - Trading (Part 3)"
 date: 2024-11-27T08:01:00-05:00
-draft: false
+draft: true
 author: "Steven Lasch"
 tags:
   - applied math
