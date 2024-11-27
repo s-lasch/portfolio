@@ -44,6 +44,8 @@ Q-Learners will converge to the optimal policy much faster when **immediate rewa
 ## Conclusion
 In this post, we've gone through an introduction to Q-Learning—the three pillars, what they mean, and how we can apply this in a simulated market. Simply put, a Q-Learner uses the current **state** and tries out different **actions** to see what happens. Based on the **reward** of an action, it learns which actions are the best to take in similar situations in the future. We also covered discretization, or the process of representing continuous data as discrete integers, and the importance of this in determining states.
 
+[>> PART 2](https://slasch-portfolio.netlify.app/blogs/ai-trader-pt2/)
+
 ## References
 [^1]: [Reinforcement Learning: An Introduction 2nd Ed. (Ch. 1)](http://incompleteideas.net/book/RLbook2020.pdf)
 [^2]: [Basic Q-learning to Proximal Policy Optimization (Chadi & Mousannif)](https://arxiv.org/pdf/2304.00026)
