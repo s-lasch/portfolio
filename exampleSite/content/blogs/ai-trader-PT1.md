@@ -32,7 +32,7 @@ These input features must go through some function, \\(f(x)\\), that turns the c
   <img src="https://raw.githubusercontent.com/s-lasch/portfolio/refs/heads/master/exampleSite/content/blogs/ai-trader/discretization.png" />
 </div>
 
-The function \\(f(x)\\) should also slice the input vector into a number of bins. Each bin is then mapped to an integer. When a vector comes into the discretization function. In the image above, feature \\(X_1\\) is put into bin 9, \\(X_2\\) into bin 4, and \\(X_n\\) into bin 2. These integers are then spliced together to create one integer. 
+The function \\(f(x)\\) should also slice the input vector into a number of bins. Each bin is then mapped to an integer. When a vector comes into the discretization function. In the image above, feature \\(X_1\\) is put into bin 9, \\(X_2\\) into bin 4, and \\(X_n\\) into bin 2. These integers are then spliced together to create one integer, \\(249\\), that represents this combination of inputs. 
 
 ### Reward Function
 Perhaps the most important pillar of a Q-Learner is the reward function. Of all the pillars, this should be most intuitive, especially for animal trainers. In this context, how do we reward our pets for making favorable decisions when training them to sit, or better yet, do a trick? Do we give them treats immediately after each success, or only once at the very end if they do everything right? 
