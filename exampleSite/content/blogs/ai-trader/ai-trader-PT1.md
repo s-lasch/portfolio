@@ -23,7 +23,7 @@ Enjoy! 🙂
 As briefly described above, Q-Learning is an RL technique that learns the optimal strategy (called a **policy** in RL) from three distinct elements: the **action space**, the **state space**, and a **reward function**. Interestingly, the "Q" in Q-Learning comes from the act of focusing on the *quality* of each action, and choosing the best action.
 
 ### **Actions**
-The action space refers to the total (cardinality) of all possible actions a learner can take.[^1] In the context of a simulated market, we have 3 possible states: buy, sell, and exit market (going from a long/short position to holding 0 shares). When given some data, the Q-Learner will output one of these actions, \\( \\{{0, 1, 2}\\} \\) =$ buy, sell, hold.
+The action space refers to the total (cardinality) of all possible actions a learner can take.[^1] In the context of a simulated market, we have 3 possible states: buy, sell, and exit market (going from a long/short position to holding 0 shares). When given some data, the Q-Learner will output one of these actions, \\( \\{{0, 1, 2}\\} =\\) buy, sell, hold.
 
 ### **States** 
 The state space likewise refers to all possible states of the learning environment at any given point in time. Determining the cardinality of the state space is tricky, as this number largely depends on our input features. Say, for example, we have 5 input features. 
