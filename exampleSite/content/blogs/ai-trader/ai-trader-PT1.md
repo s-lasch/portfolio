@@ -1,3 +1,16 @@
+---
+title: "AI-Assisted Trading - Introduction (Part 1)"
+date: 2023-08-25T09:23:33-05:00
+draft: false
+author: "Steven Lasch"
+tags:
+  - applied math
+  - reinforcement learning
+description: "This article covers an introduction to Q-Learning, a reinforcement learning concept used in an AI-based simulated stock market trader."
+toc: true
+mathjax: true
+---
+
 # AI-Assisted Trading Introduction Pt. 1
 
 ## **TLDR**
