@@ -233,6 +233,15 @@ params:
     # title: "Custom Name"
     index: false
     items:
+    - title: "Master of Science in Computer Science"
+        school:
+          name: "Georgia Institute of Technology"
+          url: "https://omscs.gatech.edu/specialization-machine-learning"
+        date: "2024 - 2026"
+        content: |-
+            - Machine learning specialization.
+            - Taking courses in the use of AI in the financial sector.
+            
       - title: "Bachelor of Science in Data Science"
         school:
           name: "Mercyhurst University"
