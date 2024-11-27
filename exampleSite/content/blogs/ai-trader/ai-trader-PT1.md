@@ -28,13 +28,13 @@ The action space refers to the total (cardinality) of all possible actions a lea
 ### **States** 
 The state space likewise refers to all possible states of the learning environment at any given point in time. Determining the cardinality of the state space is tricky, as this number largely depends on our input features. Say, for example, we have 5 input features. 
 
-These input features must go through some function, $f(x)$, that turns the continuous data into a singular integer representing unique values for all of our features. The process of converting raw continuous data into a singular integer, regardless of the number of input features, is called **discretization**.
+These input features must go through some function, \\(f(x)\\), that turns the continuous data into a singular integer representing unique values for all of our features. The process of converting raw continuous data into a singular integer, regardless of the number of input features, is called **discretization**.
 
 <div style="text-align: center;">
   <img src="https://raw.githubusercontent.com/s-lasch/portfolio/refs/heads/master/exampleSite/content/blogs/ai-trader/discretization.png" />
 </div>
 
-The function $f(x)$ should also slice the input vector into a number of bins. Each bin is then mapped to an integer. When a vector comes into the discretization function. In the image above, feature $X_1$ is put into bin 9, $X_2$ into bin 4, and $X_n$ into bin 2. These integers are then spliced together to create one integer. 
+The function \\(f(x)\\) should also slice the input vector into a number of bins. Each bin is then mapped to an integer. When a vector comes into the discretization function. In the image above, feature \\(X_1\\) is put into bin 9, \\(X_2\\) into bin 4, and \\(X_n\\) into bin 2. These integers are then spliced together to create one integer. 
 
 ### **Reward Function**
 Perhaps the most important pillar of a Q-Learner is the reward function. Of all the pillars, this should be most intuitive, especially for animal trainers. In this context, how do we reward our pets for making favorable decisions when training them to sit, or better yet, do a trick? Do we give them treats immediately after each success, or only once at the very end if they do everything right? 
