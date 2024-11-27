@@ -1,6 +1,6 @@
 ---
 title: "AI-Assisted Trading - Trading (Part 2)"
-date: 2024-11-27T08:01:00-05:00
+date: 2024-11-27T12:11:00-05:00
 draft: false
 author: "Steven Lasch"
 tags:
