@@ -30,7 +30,9 @@ The state space likewise refers to all possible states of the learning environme
 
 These input features must go through some function, $f(x)$, that turns the continuous data into a singular integer representing unique values for all of our features. The process of converting raw continuous data into a singular integer, regardless of the number of input features, is called **discretization**.
 
-(discretization image)
+<div style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/s-lasch/portfolio/refs/heads/master/exampleSite/content/blogs/ai-trader/discretization.png" />
+</div>
 
 The function $f(x)$ should also slice the input vector into a number of bins. Each bin is then mapped to an integer. When a vector comes into the discretization function. In the image above, feature $X_1$ is put into bin 9, $X_2$ into bin 4, and $X_n$ into bin 2. These integers are then spliced together to create one integer. 
 
