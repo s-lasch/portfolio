@@ -80,7 +80,7 @@ This suggests that making small, incremental transactions can be beneficial in t
 ## Conclusion
 In this post, we covered some basic momentum indicators to gauge market impact, and how to use them in a Q-Learner strategy. We then compared results to show that the Q-Learner is capable of picking up on nuanced momentum shifts. In the next and final part, we will explore the effects of transaction costs on the Q-Learner strategy.
 
-[<< PART 1](https://slasch-portfolio.netlify.app/blogs/ai-trader-pt1/) - [PART 2](https://slasch-portfolio.netlify.app/blogs/ai-trader-pt2/) - [PART 3 >>](https://slasch-portfolio.netlify.app/blogs/ai-trader-pt3/)
+[<< PART 1](https://slasch-portfolio.netlify.app/blogs/ai-trader-pt1/) - [PART 3 >>](https://slasch-portfolio.netlify.app/blogs/ai-trader-pt3/)
 
 ## References
 If you're interested, here is more information on the indicators used in this project:
