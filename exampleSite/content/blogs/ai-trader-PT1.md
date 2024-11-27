@@ -42,7 +42,7 @@ This decision will impact the time it will take for the learner to learn. Lots o
 Q-Learners will converge to the optimal policy much faster when **immediate reward** is used.  [^2] In the context of pet training, immediately rewarding the animal after each success will help the animal to associate each action with positive reinforcement.
 
 ## Conclusion
-In this post, we've gone through an introduction to Q-Learning—the three pillars, what they mean, and how we can apply this in a simulated market. We also covered discretization, or the process of representing continuous data as discrete integers, and the importance of this in determining states.
+In this post, we've gone through an introduction to Q-Learning—the three pillars, what they mean, and how we can apply this in a simulated market. Simply put, a Q-Learner uses the current **state** and tries out different **actions** to see what happens. Based on the **reward** of an action, it learns which actions are the best to take in similar situations in the future. We also covered discretization, or the process of representing continuous data as discrete integers, and the importance of this in determining states.
 
 ## References
 [^1]: [Reinforcement Learning: An Introduction 2nd Ed. (Ch. 1)](http://incompleteideas.net/book/RLbook2020.pdf)
