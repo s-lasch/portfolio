@@ -168,18 +168,18 @@ params:
     # title: "Custom Name"
     items:
       - job: "Business Intelligence Developer"
-          company: "Erie FCU"
-          companyUrl: "https://eriefcu.org"
-          date: "May. 2024 - present"
-          # featuredLink:
-          #   enable: false
-          #   name: "View the project"
-          #   url: "https://example.com"
-          content: |
-            - Use industry standard data visualization software to present data insights to stakeholders across departments.
-            - Design actionable data visualizations and centralized dashboards for marketing, branch operations, and business development departments.
-            - Ensure smooth ETL processing for the credit union's data.
-            - Participated in volunteering opportunities in the Erie area such as cleaning Presque Isle beaches, painting animal shelter rooms, retirement home community events.
+        company: "Erie FCU"
+        companyUrl: "https://eriefcu.org"
+        date: "May. 2024 - present"
+        # featuredLink:
+        #   enable: false
+        #   name: "View the project"
+        #   url: "https://example.com"
+        content: |
+          - Use industry standard data visualization software to present data insights to stakeholders across departments.
+          - Design actionable data visualizations and centralized dashboards for marketing, branch operations, and business development departments.
+          - Ensure smooth ETL processing for the credit union's data.
+          - Participated in volunteering opportunities in the Erie area such as cleaning Presque Isle beaches, painting animal shelter rooms, retirement home community events.
         
       - job: "Senior Data Analyst"
         company: "Innovation Entente Lab"
@@ -234,13 +234,13 @@ params:
     index: false
     items:
     - title: "Master of Science in Computer Science"
-        school:
-          name: "Georgia Institute of Technology"
-          url: "https://omscs.gatech.edu/specialization-machine-learning"
-        date: "2024 - 2026"
-        content: |-
-            - Machine learning specialization.
-            - Taking courses in the use of AI in the financial sector.
+      school:
+        name: "Georgia Institute of Technology"
+        url: "https://omscs.gatech.edu/specialization-machine-learning"
+      date: "2024 - 2026"
+      content: |-
+          - Machine learning specialization.
+          - Taking courses in the use of AI in the financial sector.
             
     - title: "Bachelor of Science in Data Science"
       school:
