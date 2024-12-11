@@ -170,16 +170,12 @@ params:
       - job: "Business Intelligence Developer"
         company: "Erie FCU"
         companyUrl: "https://eriefcu.org"
-        date: "May. 2024 - present"
-        # featuredLink:
-        #   enable: false
-        #   name: "View the project"
-        #   url: "https://example.com"
+        date: "May 2024 - present"
         content: |
           - Use industry standard data visualization software to present data insights to stakeholders across departments.
           - Design actionable data visualizations and centralized dashboards for marketing, branch operations, and business development departments.
           - Ensure smooth ETL processing for the credit union's data.
-          - Participated in volunteering opportunities in the Erie area such as cleaning Presque Isle beaches, painting animal shelter rooms, retirement home community events.
+          - Participated in volunteering opportunities in the Erie area such as cleaning Presque Isle beaches, painting animal shelter rooms, and retirement home community events.
         
       - job: "Senior Data Analyst"
         company: "Innovation Entente Lab"
