@@ -134,7 +134,7 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
+          url: https://github.com/s-lasch
         - icon: fab fa-linkedin
           url: https://linkedin.com/in/steven-l-lasch
         - icon: fab fa-medium
