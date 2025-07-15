@@ -1,5 +1,6 @@
 {{ define "head" }}
 <meta name="description" content="{{ .Params.description }}">
+<meta property="og:type" content="{{ .Params.meta_og_type }}" />
 <link rel="stylesheet" href="{{.Site.Params.staticPath}}/css/about.css">
 
 <!-- fontawesome -->
