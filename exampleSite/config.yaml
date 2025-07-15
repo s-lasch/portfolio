@@ -55,6 +55,8 @@ Menus:
 params:
   title: "Steven Lasch Portfolio"
   description: "This site contains Steven Lasch's recent projects, as well as work experience, presentations, publications, and more."
+  meta_og_type: "website"
+
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
